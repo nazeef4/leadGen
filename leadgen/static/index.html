@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeadGen Studio</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">LG</div>
+      <div>
+        <div class="brand-name">LeadGen Studio</div>
+        <div class="brand-sub" id="brand-version">local</div>
+      </div>
+    </div>
+    <nav id="nav">
+      <button class="nav-item active" data-view="dashboard">Dashboard</button>
+      <button class="nav-item" data-view="targeting">1 · Targeting</button>
+      <button class="nav-item" data-view="leads">2 · Leads</button>
+      <button class="nav-item" data-view="compose">3 · Compose</button>
+      <button class="nav-item" data-view="dispatch">4 · Dispatch</button>
+      <button class="nav-item" data-view="crm">5 · CRM &amp; Replies</button>
+      <button class="nav-item" data-view="accounts">Accounts</button>
+      <button class="nav-item" data-view="settings">Compliance &amp; AI</button>
+    </nav>
+    <div class="side-foot">
+      <div id="quota-mini" class="quota-mini">—</div>
+      <div class="side-note">Runs entirely on this machine.</div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <div>
+        <h1 id="view-title">Dashboard</h1>
+        <p id="view-sub" class="muted">Overview of targeting, outreach and pipeline health.</p>
+      </div>
+      <div class="topbar-actions">
+        <span id="dispatch-pill" class="pill pill-idle">idle</span>
+        <button class="btn ghost" id="btn-refresh">Refresh</button>
+      </div>
+    </header>
+    <section id="view" class="view"></section>
+  </main>
+</div>
+<div id="toast-host"></div>
+<div id="modal-host" class="modal-host hidden"></div>
+<script src="/static/api.js"></script>
+<script src="/static/views.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

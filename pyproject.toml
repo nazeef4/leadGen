@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leadgen"
+version = "1.0.0"
+description = "Locally hosted B2B lead generation, cold outreach and lightweight CRM platform"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "nazeef4" }]
+license = { text = "MIT" }
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sqlalchemy>=2.0",
+    "pydantic[email]>=2.7",
+    "pydantic-settings>=2.3",
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.2",
+    "python-dotenv>=1.0",
+    "dnspython>=2.6",
+]
+
+[project.optional-dependencies]
+desktop = ["pywebview>=5.1"]
+dev = ["pytest>=8.2", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[project.scripts]
+leadgen = "leadgen.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["leadgen*"]
+
+[tool.setuptools.package-data]
+"leadgen" = ["data/*.json", "data/geo/*.json", "static/**/*", "templates/email/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+filterwarnings = ["ignore::DeprecationWarning"]
