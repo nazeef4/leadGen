@@ -1113,6 +1113,11 @@ Views.settings = async () => {
   const llmModel = h('input', { type: 'text', value: settings.llm_model });
   const llmKey = h('input', { type: 'password', placeholder: settings.llm_configured ? 'configured' : 'sk-…' });
   const llmBase = h('input', { type: 'text', value: 'https://api.openai.com/v1' });
+  // Write-only: the API reports whether a key is configured, never the key.
+  const placesKey = h('input', {
+    type: 'password',
+    placeholder: settings.google_places_configured ? 'configured' : 'AIza… (optional)',
+  });
 
   wrap.appendChild(h('div', { class: 'card' }, [
     h('h2', {}, 'AI copy engine'),
@@ -1125,6 +1130,19 @@ Views.settings = async () => {
       h('div', {}, [h('label', {}, 'API key'), llmKey]),
       h('div', {}, [h('label', {}, 'Base URL'), llmBase]),
     ]),
+  ]));
+
+  wrap.appendChild(h('div', { class: 'card' }, [
+    h('h2', {}, 'Lead sources'),
+    h('p', { class: 'muted' }, 'DuckDuckGo, CSV and the offline demo need no key. Google Places returns the richest records (name, address, phone, website, rating) and costs money, so it stays off until you add a billing-enabled key.'),
+    h('div', { class: 'kv' }, [
+      h('span', { class: 'k' }, 'Google Places'),
+      h('span', {}, settings.google_places_configured ? 'configured' : 'not configured'),
+    ]),
+    h('div', { class: 'row' }, [
+      h('div', {}, [h('label', {}, 'Google Maps API key'), placesKey]),
+    ]),
+    h('p', { class: 'help' }, 'Leave blank to keep it disabled. The key is write-only — it is never sent back to the browser.'),
   ]));
 
   const save = h('button', {
@@ -1146,6 +1164,7 @@ Views.settings = async () => {
         llm_base_url: llmBase.value,
       };
       if (llmKey.value) body.llm_api_key = llmKey.value;
+      if (placesKey.value) body.google_maps_api_key = placesKey.value;
       try {
         await API.patch('/api/system/settings', body);
         toast('Settings applied for this session', 'ok');

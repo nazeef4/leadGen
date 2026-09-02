@@ -347,12 +347,20 @@ def test_google_places_key_is_write_only_and_enables_the_source(client):
     assert after["google_places_configured"] is True
     assert "AIza-test-key-123" not in res.text, "the key must never be echoed back"
 
-    health = client.get("/api/system/health").json()
-    assert "google_places" in health["scrapers"], "source should become available"
+    # /api/system/health lists the static scraper registry, so it says nothing
+    # about availability. /api/system/scrapers actually builds each scraper and
+    # reports whether it is usable — that is the assertion that means something.
+    def places_available() -> bool:
+        rows = client.get("/api/system/scrapers").json()["scrapers"]
+        return next(r["available"] for r in rows if r["name"] == "google_places")
 
-    # Clean up so the key does not leak into other tests.
+    assert places_available() is True, "source should become available"
+
+    # Clean up so the key does not leak into other tests, and prove the source
+    # switches back off.
     client.patch("/api/system/settings", json={"google_maps_api_key": ""})
     assert (
         client.get("/api/system/settings").json()["settings"]["google_places_configured"]
         is False
     )
+    assert places_available() is False
