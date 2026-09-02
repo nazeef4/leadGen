@@ -208,7 +208,7 @@ Copy `.env.example` to `.env`. Every key is prefixed `LEADGEN_`.
 ## Tests
 
 ```bash
-pytest                 # 162 tests
+pytest                 # 163 tests
 pytest -q tests/test_delay.py tests/test_compliance.py
 ```
 
@@ -286,7 +286,7 @@ leadgen/
 scripts/build_geo.py  regenerates the geo dataset
 scripts/seed_demo.py  thin wrapper around leadgen/demo_data.py
 docs/                 ARCHITECTURE.md, COMPLIANCE.md
-tests/                162 tests, incl. tests/js/ui.test.js (jsdom)
+tests/                163 tests, incl. tests/js/ui.test.js (jsdom)
 ```
 
 ## Licence

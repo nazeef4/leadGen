@@ -259,3 +259,18 @@ def test_gitignore_does_not_shadow_package_directories():
         f"these unanchored .gitignore patterns also match package directories "
         f"{sorted(shadowed)}; anchor them with a leading slash (e.g. '/{shadowed[0]}')"
     )
+
+
+def test_make_lint_actually_runs_ruff():
+    """A linter in the dev extras but never invoked by `make lint` is not a check.
+
+    This gap existed for real: ruff was a declared dev dependency and stayed
+    clean, but `make lint` only ran pytest and compileall, so nothing ever
+    enforced it.
+    """
+    makefile = (ROOT / "Makefile").read_text(encoding="utf-8")
+    lint_block = makefile.split("\nlint:\n", 1)[1].split("\n\n", 1)[0]
+    assert "ruff check" in lint_block, (
+        f"`make lint` must invoke ruff; got:\n{lint_block}"
+    )
+    assert "pytest" in lint_block, "`make lint` must still run the test suite"

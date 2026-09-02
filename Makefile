@@ -24,6 +24,7 @@ test:
 	$(PY) -m pytest -q
 
 lint:
+	$(PY) -m ruff check leadgen scripts tests
 	$(PY) -m pytest -q
 	$(PY) -m compileall -q leadgen scripts
 
