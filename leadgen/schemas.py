@@ -224,6 +224,9 @@ class SettingsUpdate(BaseModel):
     quiet_hours_end: int | None = Field(default=None, ge=0, le=23)
     verify_mx_records: bool | None = None
     scrape_results_per_query: int | None = Field(default=None, ge=1, le=100)
+    # Optional billing-enabled key for the Google Places source. Write-only:
+    # the API reports `google_places_configured`, never the key itself.
+    google_maps_api_key: str | None = None
 
 
 class GenericResponse(BaseModel):

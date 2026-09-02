@@ -328,3 +328,31 @@ def test_settings_endpoints(client):
     posture = client.get("/api/system/compliance-posture").json()
     assert posture["caps"]["daily"]["limit"] in (300, 400)
     assert any(c["id"] == "randomised_delay" for c in posture["checks"])
+
+
+def test_google_places_key_is_write_only_and_enables_the_source(client):
+    """
+    The Places key can be set at runtime, flips the source on, and is never
+    readable back — the API reports a boolean instead of the secret.
+    """
+    before = client.get("/api/system/settings").json()["settings"]
+    assert before["google_places_configured"] is False
+    assert "google_maps_api_key" not in before
+
+    res = client.patch(
+        "/api/system/settings", json={"google_maps_api_key": "AIza-test-key-123"}
+    )
+    assert res.status_code == 200
+    after = res.json()["settings"]
+    assert after["google_places_configured"] is True
+    assert "AIza-test-key-123" not in res.text, "the key must never be echoed back"
+
+    health = client.get("/api/system/health").json()
+    assert "google_places" in health["scrapers"], "source should become available"
+
+    # Clean up so the key does not leak into other tests.
+    client.patch("/api/system/settings", json={"google_maps_api_key": ""})
+    assert (
+        client.get("/api/system/settings").json()["settings"]["google_places_configured"]
+        is False
+    )

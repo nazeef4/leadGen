@@ -104,6 +104,7 @@ class Settings(BaseSettings):
             "llm_provider": self.llm_provider,
             "llm_model": self.llm_model,
             "llm_configured": bool(self.llm_api_key),
+            "google_places_configured": bool(self.google_maps_api_key),
             "verify_mx_records": self.verify_mx_records,
             "scrape_results_per_query": self.scrape_results_per_query,
             "business_name": self.business_name,
