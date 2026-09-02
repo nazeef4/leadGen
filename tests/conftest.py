@@ -16,17 +16,39 @@ os.environ["LEADGEN_BUSINESS_MAILING_ADDRESS"] = "12 Test Street, Suite 4, Sprin
 
 from leadgen.config import get_settings  # noqa: E402
 from leadgen.db import create_all, init_engine, reset_engine  # noqa: E402
+from leadgen.security import reset_vault  # noqa: E402
+from leadgen.services.llm import reset_llm  # noqa: E402
+from leadgen.services.scrapers.pipeline import reset_pipeline  # noqa: E402
 
 
 @pytest.fixture(autouse=True)
-def fresh_db(tmp_path):
-    """Recreate the schema in a per-test database file."""
-    reset_engine()
-    db_path = tmp_path / "test.db"
-    engine = init_engine(get_settings(), url=f"sqlite:///{db_path.as_posix()}")
+def fresh_db(tmp_path, monkeypatch):
+    """Give every test a genuinely private database.
+
+    Pointing ``LEADGEN_STATE_DIR`` at ``tmp_path`` (rather than passing an
+    explicit ``url`` to ``init_engine``) matters: ``create_app()`` calls
+    ``init_engine(settings)`` with no URL, and ``init_engine`` rebuilds the
+    engine whenever the URL differs. Passing ``url=`` here therefore handed the
+    first ``TestClient`` a *shared* database while the test believed it had a
+    private one, so rows leaked between tests. Aligning the settings URL with
+    the per-test path makes both call sites resolve to the same file.
+    """
+    def _reset_singletons() -> None:
+        # These cache a Settings object at construction time, so they must be
+        # dropped whenever settings change or a previous test's config leaks in.
+        reset_engine()
+        reset_pipeline()
+        reset_llm()
+        reset_vault()
+        get_settings.cache_clear()
+
+    _reset_singletons()
+    monkeypatch.setenv("LEADGEN_STATE_DIR", str(tmp_path))
+    _reset_singletons()
+    engine = init_engine(get_settings())
     create_all()
     yield engine
-    reset_engine()
+    _reset_singletons()
 
 
 @pytest.fixture

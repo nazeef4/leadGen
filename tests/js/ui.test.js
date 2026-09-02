@@ -263,6 +263,43 @@ async function main() {
     window.document.querySelector('#view').textContent.slice(0, 80));
   window.fetch = realFetch;
 
+  /* --------------------------------------------------------- first run */
+  // An empty workspace must show guidance, not just a wall of zeros.
+  const runFetch = window.fetch;
+  let demoPosted = false;
+  window.fetch = (url, opts = {}) => {
+    const u = String(url);
+    if (u.includes('/api/crm/overview')) {
+      const empty = { totals: { leads: 0, sent: 0, replies: 0, interested: 0, unread: 0, replyRate: 0 }, campaigns: [] };
+      return Promise.resolve({ ok: true, status: 200, json: async () => empty });
+    }
+    if (u.includes('/api/campaigns') && !u.includes('dispatch')) {
+      return Promise.resolve({ ok: true, status: 200, json: async () => ({ campaigns: [] }) });
+    }
+    if (u.includes('/api/system/demo-data')) {
+      demoPosted = true;
+      return Promise.resolve({ ok: true, status: 200, json: async () => ({ ok: true, leads: 18, replies: 5 }) });
+    }
+    return runFetch(u, opts);
+  };
+  await window.__app.go('dashboard');
+  const fr = window.document.querySelector('#view .first-run');
+  ok('empty workspace shows a first-run guide', !!fr);
+  ok('guide lists all six setup steps',
+    window.document.querySelectorAll('#view .first-run .step').length === 6,
+    `${window.document.querySelectorAll('#view .first-run .step').length} steps`);
+  ok('guide steps are real buttons',
+    window.document.querySelectorAll('#view .first-run button.step[type="button"]').length === 6);
+  const demoBtn = Array.from(window.document.querySelectorAll('#view .first-run .btn'))
+    .find((b) => /sample data/i.test(b.textContent));
+  ok('guide offers a one-click sample loader', !!demoBtn);
+  demoBtn.click();
+  await new Promise((r) => setTimeout(r, 60));
+  ok('sample loader calls the demo-data endpoint', demoPosted);
+  ok('sample loader reports success to the user',
+    window.document.querySelectorAll('#toast-host .toast').length > 0);
+  window.fetch = runFetch;
+
   /* ------------------------------------------------- responsive / mobile */
   const sidebar = window.document.querySelector('#sidebar');
   const scrimEl = window.document.querySelector('#scrim');

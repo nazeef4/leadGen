@@ -338,3 +338,14 @@ def get_pipeline() -> ScrapePipeline:
     if _pipeline is None:
         _pipeline = ScrapePipeline()
     return _pipeline
+
+
+def reset_pipeline() -> None:
+    """Drop the cached pipeline so the next one re-reads current settings.
+
+    The pipeline captures ``Settings`` at construction, so a settings change made
+    after it was built (e.g. adding a Google Places key at runtime) is invisible
+    to ``build_scraper`` unless the cached instance is discarded.
+    """
+    global _pipeline
+    _pipeline = None

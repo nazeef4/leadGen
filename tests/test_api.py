@@ -364,3 +364,26 @@ def test_google_places_key_is_write_only_and_enables_the_source(client):
         is False
     )
     assert places_available() is False
+
+
+def test_demo_data_endpoint_populates_workspace(client):
+    """The one-click demo loader must actually create browsable data."""
+    assert client.get("/api/crm/overview").json()["totals"]["leads"] == 0
+
+    res = client.post("/api/system/demo-data")
+    assert res.status_code == 200
+    body = res.json()
+    assert body["ok"] is True
+    assert body["leads"] > 0
+    assert body["sent"] > 0
+    assert body["replies"] > 0
+    assert isinstance(body["campaign"], str) and body["campaign"]
+
+    totals = client.get("/api/crm/overview").json()["totals"]
+    assert totals["leads"] == body["leads"]
+    assert totals["sent"] == body["sent"]
+
+    # The seeded data must be reachable by the screens that browse it.
+    assert len(client.get("/api/campaigns").json()["campaigns"]) == 1
+    cid = client.get("/api/campaigns").json()["campaigns"][0]["id"]
+    assert len(client.get(f"/api/campaigns/{cid}/leads").json()["leads"]) > 0

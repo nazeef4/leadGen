@@ -162,3 +162,24 @@ def scrapers() -> dict:
             }
         )
     return {"scrapers": out}
+
+
+@router.post("/demo-data")
+def load_demo_data() -> dict:
+    """Seed a fully populated demo workspace so the UI can be explored immediately.
+
+    Deliberately additive: it never deletes or overwrites existing rows, so a user
+    can try it on a real workspace without losing their own data.
+    """
+    from ..demo_data import seed
+
+    counts = seed()
+    return {
+        "ok": True,
+        "campaign": counts.get("campaign"),
+        "places": counts.get("places", []),
+        "leads": counts.get("leads", 0),
+        "sent": counts.get("sent", 0),
+        "replies": counts.get("replies", 0),
+        "interested": counts.get("interested", 0),
+    }

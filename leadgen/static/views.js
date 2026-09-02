@@ -18,6 +18,58 @@ const State = {
 const Views = {};
 
 /* ============================================================= dashboard */
+function firstRunCard() {
+  const steps = [
+    ['Connect a sending account', 'accounts',
+      'SMTP and IMAP credentials power real sends and reply syncing.'],
+    ['Define your targeting', 'targeting',
+      'Pick a niche, then the countries, states or cities you want to reach.'],
+    ['Collect and curate leads', 'leads',
+      'Scrape a directory, import a CSV, or try the offline sample source.'],
+    ['Draft the outreach', 'compose',
+      'Personalise the copy and preview it against the compliance scan.'],
+    ['Queue the dispatch', 'dispatch',
+      'Throttled, randomised sends stay under the daily recipient cap.'],
+    ['Track replies', 'crm',
+      'Responses are matched back to leads and flagged for follow-up.'],
+  ];
+  return h('div', { class: 'card first-run' }, [
+    h('h2', {}, 'Get started'),
+    h('p', { class: 'muted' },
+      'This workspace has no data yet. Work through the six steps below, or load a sample workspace to see every screen populated straight away.'),
+    h('ol', { class: 'steps' }, steps.map(([title, view, blurb], i) => h('li', {}, [
+      h('button', { class: 'step', type: 'button', onclick: () => go(view) }, [
+        h('span', { class: 'step-num', 'aria-hidden': 'true' }, String(i + 1)),
+        h('span', { class: 'step-body' }, [
+          h('span', { class: 'step-title' }, title),
+          h('span', { class: 'sub muted' }, blurb),
+        ]),
+      ]),
+    ]))),
+    h('div', { class: 'btn-row' }, [
+      h('button', {
+        class: 'btn primary',
+        type: 'button',
+        onclick: async (e) => {
+          const btn = e.currentTarget;
+          btn.disabled = true;
+          btn.textContent = 'Loading sample data…';
+          try {
+            const res = await API.post('/api/system/demo-data');
+            toast(`Sample workspace loaded — ${res.leads} leads, ${res.replies} replies`, 'good');
+            go('dashboard');
+          } catch (err) {
+            toast(String(err.message || err), 'err');
+            btn.disabled = false;
+            btn.textContent = 'Load sample data';
+          }
+        },
+      }, 'Load sample data'),
+      h('span', { class: 'muted' }, 'Adds a demo campaign; it never deletes your own data.'),
+    ]),
+  ]);
+}
+
 Views.dashboard = async () => {
   const [health, crm, posture] = await Promise.all([
     API.get('/api/system/health'),
@@ -32,6 +84,10 @@ Views.dashboard = async () => {
     statCard('Replies', crm.totals.replies, `reply rate ${pct(crm.totals.replyRate)}`),
     statCard('Interested', crm.totals.interested, `${crm.totals.unread} unread replies`),
   ]));
+
+  if (crm.totals.leads === 0 && (crm.campaigns || []).length === 0) {
+    wrap.appendChild(firstRunCard());
+  }
 
   const quotaRatio = health.quota.dailyCap ? health.quota.sentToday / health.quota.dailyCap : 0;
   const quotaCard = h('div', { class: 'card' }, [
