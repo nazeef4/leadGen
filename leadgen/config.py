@@ -69,6 +69,8 @@ class Settings(BaseSettings):
         "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     )
     verify_mx_records: bool = True
+    # Optional, billing-enabled. The Google Places source stays off without it.
+    google_maps_api_key: str = ""
 
     # --- compliance -------------------------------------------------------
     business_name: str = ""

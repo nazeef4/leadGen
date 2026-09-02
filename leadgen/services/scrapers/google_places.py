@@ -42,7 +42,11 @@ class GooglePlacesScraper(BaseScraper):
 
     def __init__(self, settings: Settings | None = None):
         super().__init__(settings)
-        self.api_key = os.environ.get("LEADGEN_GOOGLE_MAPS_API_KEY", "")
+        # Read through Settings like every other knob, so it is configurable in
+        # .env and overridable in tests rather than reaching into os.environ.
+        self.api_key = self.settings.google_maps_api_key or os.environ.get(
+            "LEADGEN_GOOGLE_MAPS_API_KEY", ""
+        )
         self.last_error = ""
 
     @property

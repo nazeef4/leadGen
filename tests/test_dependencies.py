@@ -156,3 +156,45 @@ def test_readme_test_count_is_accurate():
     assert claimed == {actual}, (
         f"README advertises {sorted(claimed)} tests but pytest collects {actual}"
     )
+
+
+def test_env_example_documents_every_setting():
+    """
+    .env.example is the user's only map of the configuration surface. Six real
+    settings had silently gone undocumented, so assert it stays in sync with
+    Settings. Commented-out entries count as documentation.
+    """
+    from leadgen.config import Settings
+
+    env_keys = {f"LEADGEN_{name}".upper() for name in Settings.model_fields}
+    text = (ROOT / ".env.example").read_text(encoding="utf-8")
+    documented = set(re.findall(r"(LEADGEN_[A-Z0-9_]+)\s*=", text))
+
+    assert not (env_keys - documented), (
+        f"settings missing from .env.example: {sorted(env_keys - documented)}"
+    )
+    assert not (documented - env_keys), (
+        f".env.example documents keys that are not settings: {sorted(documented - env_keys)}"
+    )
+
+
+def test_google_places_key_comes_from_settings():
+    """
+    The Places key used to be read straight out of os.environ, bypassing
+    Settings, so it could not be configured or tested like any other knob.
+    """
+    from leadgen.config import Settings
+    from leadgen.services.scrapers.google_places import GooglePlacesScraper
+
+    source = (PACKAGE / "services" / "scrapers" / "google_places.py").read_text(encoding="utf-8")
+    assert "self.settings.google_maps_api_key" in source
+    assert "google_maps_api_key" in Settings.model_fields
+
+    scraper = GooglePlacesScraper(Settings(google_maps_api_key="test-key"))
+    assert scraper.available is True
+    assert scraper.api_key == "test-key"
+
+    empty = GooglePlacesScraper(Settings(google_maps_api_key=""))
+    assert empty.available is False
+    assert empty.search("anything", limit=5) == []
+    assert "not configured" in empty.last_error
