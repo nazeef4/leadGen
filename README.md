@@ -21,6 +21,39 @@ machine unless you configure an LLM endpoint yourself.
 
 ## Quick start
 
+Needs Python 3.10 or newer. Check with `py -3 --version` on Windows or
+`python3 --version` on macOS/Linux.
+
+### Windows - Command Prompt
+
+```bat
+py -3 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+copy .env.example .env
+python -m leadgen doctor
+python -m leadgen serve
+```
+
+### Windows - PowerShell
+
+```powershell
+py -3 -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+Copy-Item .env.example .env
+python -m leadgen doctor
+python -m leadgen serve
+```
+
+> If PowerShell refuses to run the activation script, either run
+> `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, or skip activation
+> entirely and call `.venv\Scripts\python -m leadgen serve`.
+
+### macOS / Linux
+
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -29,6 +62,8 @@ cp .env.example .env            # set your business name + postal address
 python -m leadgen doctor        # sanity-check config, dataset and scrapers
 python -m leadgen serve         # http://127.0.0.1:8765
 ```
+
+Then open <http://127.0.0.1:8765>.
 
 To see the whole product populated before you connect anything real:
 
@@ -43,9 +78,16 @@ Then open the app, pick the demo campaign, and walk through the tabs.
 ```bash
 python -m leadgen suggest "HVAC and AC repair services"
 python -m leadgen suggest "managed IT support" --country US --top 8
-python -m leadgen preview --offering "commercial HVAC maintenance contracts" \
-    --business "Desert Air Conditioning" --city Phoenix --demo-call --slots 3
 ```
+
+```bash
+python -m leadgen preview --offering "commercial HVAC maintenance contracts" --business "Desert Air Conditioning" --city Phoenix --demo-call --slots 3
+```
+
+> Those two are single commands written out in full so they paste unchanged into
+> Command Prompt, PowerShell and bash alike. A trailing backslash for line
+> continuation is a shell feature, not a Python one, and `cmd.exe` uses `^`
+> instead.
 
 ---
 
