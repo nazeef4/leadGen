@@ -96,12 +96,53 @@ def as_utc(value: datetime) -> datetime:
     return value
 
 
+def _phrase_pattern(phrase: str) -> re.Pattern[str]:
+    """Compile a spam phrase into a word-boundary-aware matcher.
+
+    Naive substring matching produces false positives that matter in exactly the
+    verticals this app targets: ``trial`` matches "indusTRIAL", ``prize`` matches
+    "prized", ``urgent`` matches "urgently". Anchoring on word boundaries fixes
+    that, while symbol phrases like ``$$$`` and ``!!!`` keep plain substring
+    semantics because they have no word boundary to anchor to.
+    """
+    escaped = re.escape(phrase)
+    prefix = r"\b" if phrase[:1].isalnum() else ""
+    suffix = r"\b" if phrase[-1:].isalnum() else ""
+    return re.compile(f"{prefix}{escaped}{suffix}", re.IGNORECASE)
+
+
+# Acronyms that are normal in B2B copy and must never count as "shouting".
+# Without these, an HVAC campaign is penalised for writing "HVAC" and every
+# email is penalised for the mandatory "Reply STOP" opt-out line.
+DEFAULT_ALLOWED_CAPS = {
+    "AC", "API", "AR", "AP", "ASAP", "ASHRAE", "B2B", "B2C", "BIM", "CAD", "CCPA",
+    "CDL", "CEO", "CFO", "COO", "CPA", "CRM", "CSV", "DNS", "DOT", "EIA", "EMEA",
+    "EOD", "EOM", "EPA", "ERP", "ETL", "EUR", "FAQ", "FDA", "FMCSA", "FTA", "GBP",
+    "GDPR", "GMT", "GST", "HIPAA", "HR", "HTML", "HTTP", "HTTPS", "HVAC", "ISO",
+    "IT", "JSON", "KPI", "LAN", "LLC", "LTD", "MEP", "MLM", "MSP", "NATE", "NDA",
+    "OSHA", "PCI", "PDF", "PM", "PO", "PSA", "QA", "QC", "RFQ", "RFP", "ROI", "SAAS",
+    "SEO", "SLA", "SOC", "SQL", "SSL", "TLS", "TOS", "URL", "USD", "USP", "UTC",
+    "VAT", "VPN", "WAN", "W2", "W9", "XML", "STOP",  # STOP: the required opt-out keyword
+}
+
+
 class ComplianceEngine:
     def __init__(self, rules_path: Path | None = None, settings: Settings | None = None):
         self.settings = settings or get_settings()
         self.rules_path = rules_path or RULES_PATH
         self.rules = self._load_rules()
+        self.allowed_caps_words: set[str] = {
+            w.upper() for w in self.rules.get("allowedCapsWords", DEFAULT_ALLOWED_CAPS)
+        }
         self.spam_phrases: list[str] = [p.lower() for p in self.rules.get("spamPhrases", [])]
+        self.spam_patterns: list[tuple[str, re.Pattern[str]]] = [
+            (phrase, _phrase_pattern(phrase)) for phrase in self.spam_phrases
+        ]
+
+    def find_spam_phrases(self, subject: str, body: str) -> list[str]:
+        """Return the spam-trigger phrases present in the given copy."""
+        haystack = f"{subject} {body}"
+        return [phrase for phrase, pattern in self.spam_patterns if pattern.search(haystack)]
 
     def _load_rules(self) -> dict:
         try:
@@ -176,9 +217,8 @@ class ComplianceEngine:
         else:
             report.checks["postalAddress"] = True
 
-        # spam phrase scoring
-        haystack = f"{subject} {body}".lower()
-        hits = [p for p in self.spam_phrases if p in haystack]
+        # spam phrase scoring (word-boundary aware; see _phrase_pattern)
+        hits = self.find_spam_phrases(subject, body)
         report.checks["spamPhraseHits"] = hits[:10]
         if len(hits) >= 4:
             report.add(
@@ -195,7 +235,7 @@ class ComplianceEngine:
                 min(4 * len(hits), 16),
             )
 
-        caps = [w for w in CAPS_WORD_RE.findall(body) if w not in {"HTML", "HTTP", "HTTPS", "PDF"}]
+        caps = [w for w in CAPS_WORD_RE.findall(body) if w not in self.allowed_caps_words]
         report.checks["capsWords"] = len(caps)
         if len(caps) > self.rules.get("capsWordsThreshold", 3):
             report.add("shouting", "warn", f"{len(caps)} ALL-CAPS words in the body.", 8)

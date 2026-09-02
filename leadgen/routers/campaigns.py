@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy import delete, func, or_, select, update
+from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
 from ..db import get_db
@@ -16,7 +16,6 @@ from ..models import (
     LeadStatus,
     MessageStatus,
     OutboundMessage,
-    PipelineStage,
     Suppression,
 )
 from ..schemas import (
@@ -32,7 +31,7 @@ from ..schemas import (
 )
 from ..services.compliance import get_compliance_engine
 from ..services.copywriter import OfferConfig, get_copywriter
-from ..services.delay import DelayConfig, DelayPlanner, utcnow
+from ..services.delay import DelayConfig, DelayPlanner
 from ..services.dispatcher import get_engine
 from ..services.geo import get_geo_service
 from ..services.niche_advisor import get_niche_advisor

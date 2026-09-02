@@ -8,11 +8,10 @@ from __future__ import annotations
 
 import logging
 import threading
-import time
 import uuid
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
-from typing import Callable
 
 from ...config import Settings, get_settings
 from ..geo import Place, get_geo_service

@@ -103,7 +103,7 @@ class EmailAccount(Base):
     warmup_day: Mapped[int] = mapped_column(Integer, default=0)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
-    messages: Mapped[list["OutboundMessage"]] = relationship(back_populates="account")
+    messages: Mapped[list[OutboundMessage]] = relationship(back_populates="account")
 
     def to_dict(self, include_secret_state: bool = False) -> dict:
         data = {
@@ -159,10 +159,10 @@ class Campaign(Base):
         DateTime(timezone=True), default=utcnow, onupdate=utcnow
     )
 
-    leads: Mapped[list["Lead"]] = relationship(
+    leads: Mapped[list[Lead]] = relationship(
         back_populates="campaign", cascade="all, delete-orphan"
     )
-    messages: Mapped[list["OutboundMessage"]] = relationship(back_populates="campaign")
+    messages: Mapped[list[OutboundMessage]] = relationship(back_populates="campaign")
 
     def to_dict(self, counts: dict | None = None) -> dict:
         return {
@@ -225,9 +225,9 @@ class Lead(Base):
     )
 
     campaign: Mapped[Campaign | None] = relationship(back_populates="leads")
-    messages: Mapped[list["OutboundMessage"]] = relationship(back_populates="lead")
-    replies: Mapped[list["Reply"]] = relationship(back_populates="lead")
-    activities: Mapped[list["Activity"]] = relationship(
+    messages: Mapped[list[OutboundMessage]] = relationship(back_populates="lead")
+    replies: Mapped[list[Reply]] = relationship(back_populates="lead")
+    activities: Mapped[list[Activity]] = relationship(
         back_populates="lead", cascade="all, delete-orphan"
     )
 

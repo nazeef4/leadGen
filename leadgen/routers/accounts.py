@@ -10,9 +10,9 @@ from ..db import get_db
 from ..models import EmailAccount, OutboundMessage
 from ..schemas import AccountCreate, AccountUpdate, ConnectionTest, GenericResponse
 from ..security import get_vault
+from ..services.delay import utcnow
 from ..services.inbox_sync import ImapInbox
 from ..services.sender import PROVIDER_PRESETS, SmtpSender, guess_provider
-from ..services.delay import hour_window, utcnow
 
 router = APIRouter(prefix="/api/accounts", tags=["accounts"])
 

@@ -213,3 +213,80 @@ def test_next_available_slot_rolls_over(engine):
         now, sent_today=10, sent_this_hour=60, daily_cap=400, hourly_cap=60
     )
     assert rolled.hour == 16 and rolled.minute == 0
+
+
+# --------------------------------------------------------------------------
+# Regression: the shipped spam-phrase list and the caps allowlist must not
+# penalise copy this app generates itself. Three separate defects lived here.
+# --------------------------------------------------------------------------
+
+
+def test_spam_phrases_match_on_word_boundaries(engine):
+    """
+    Naive substring matching flagged 'trial' inside "industrial" — a false
+    positive in exactly the vertical (industrial HVAC) this app targets.
+    """
+    innocent = (
+        "We service industrial HVAC and commercial rooftop units for facilities "
+        "managers. Our prized clients include three regional grocers, and we "
+        "promised measurable results. Reply STOP to unsubscribe. "
+        "12 Test Street, Suite 4, Springfield, ST 00000"
+    )
+    assert engine.find_spam_phrases("quick question", innocent) == []
+
+
+def test_spam_phrases_still_catch_real_spam(engine):
+    spammy = (
+        "ACT NOW and get 100% free guaranteed risk free money back offer. "
+        "You have won a free gift and free trial with unlimited access!!!"
+    )
+    hits = engine.find_spam_phrases("YOU HAVE WON!!!", spammy)
+    assert len(hits) >= 4
+    assert engine.check_content("YOU HAVE WON!!!", spammy).blocked
+
+
+def test_symbol_phrases_still_match_without_word_boundaries(engine):
+    """'$$$' and '!!!' have no word boundary to anchor to."""
+    assert "$$$" in engine.find_spam_phrases("pay $$$", "body")
+
+
+def test_mandatory_footer_is_not_flagged(engine):
+    """
+    The CAN-SPAM footer ('Reply STOP to unsubscribe') is required by law, so
+    neither 'unsubscribe' nor 'STOP' may count against the email.
+    """
+    report = engine.check_content("quick question about Desert Air", GOOD_BODY)
+    assert not report.blocked
+    assert report.score == 100
+    assert report.checks["spamPhraseHits"] == []
+    assert report.checks["capsWords"] == 0, "STOP/HVAC must not count as shouting"
+
+
+def test_common_b2b_acronyms_are_not_shouting(engine):
+    body = GOOD_BODY.replace(
+        "commercial maintenance contracts",
+        "commercial HVAC, MEP and ROI reporting for your CRM",
+    )
+    report = engine.check_content("quick question", body)
+    assert report.checks["capsWords"] == 0
+    assert not any(i.code == "shouting" for i in report.issues)
+
+
+def test_real_shouting_is_still_flagged(engine):
+    shouty = GOOD_BODY + " CALL NOW THIS IS HUGE AMAZING DEAL BUY TODAY"
+    report = engine.check_content("quick question", shouty)
+    assert any(i.code == "shouting" for i in report.issues)
+    assert report.checks["capsWords"] > 3
+
+
+def test_rules_file_ships_and_is_usable():
+    """The dataset is package data; losing it silently degrades every scan."""
+    from leadgen.services.compliance import RULES_PATH
+
+    assert RULES_PATH.exists(), "leadgen/data/spam_rules.json must ship with the package"
+    engine = ComplianceEngine()
+    assert len(engine.spam_phrases) > 50
+    assert len(engine.allowed_caps_words) > 20
+    assert "HVAC" in engine.allowed_caps_words
+    assert "STOP" in engine.allowed_caps_words
+    assert "unsubscribe" not in engine.spam_phrases, "would flag the mandatory footer"

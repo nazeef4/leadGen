@@ -166,7 +166,7 @@ Copy `.env.example` to `.env`. Every key is prefixed `LEADGEN_`.
 ## Tests
 
 ```bash
-pytest                 # 124 tests
+pytest                 # 142 tests
 pytest -q tests/test_delay.py tests/test_compliance.py
 ```
 
@@ -174,6 +174,25 @@ Covers geo expansion and the `*` macro, niche ranking, delay randomness and
 caps, every compliance rule, copy personalisation and offer weaving, email
 extraction and scoring, CSV import, reply classification/matching/ingestion, and
 the full API flow including a dry-run dispatch.
+
+There is also cover for the parts that are easy to break silently:
+
+- `tests/test_frontend.py` runs `node --check` on every shipped JS file (a parse
+  error in one script blanks the whole app) and, when `jsdom` is installed,
+  mounts `index.html` headlessly and renders all eight screens against API
+  responses captured from a live server — 46 DOM assertions including the
+  country → state → city drill-down.
+- `tests/test_dependencies.py` walks the AST of every module and asserts each
+  third-party import is declared in `pyproject.toml`, so a missing dependency
+  cannot ship.
+
+Capture the UI fixtures against a running server with:
+
+```bash
+python -m leadgen demo
+python -m leadgen serve &
+tests/js/capture_fixtures.sh
+```
 
 ---
 
@@ -221,10 +240,11 @@ leadgen/
     scrapers/         duckduckgo, google_places, csv, demo, enrich, pipeline
   data/               spam_rules.json + geo/*.json (54 countries)
   static/             dependency-free SPA (no build step)
+  demo_data.py        seeds a worked example (`leadgen demo`)
 scripts/build_geo.py  regenerates the geo dataset
-scripts/seed_demo.py  seeds a worked example
+scripts/seed_demo.py  thin wrapper around leadgen/demo_data.py
 docs/                 ARCHITECTURE.md, COMPLIANCE.md
-tests/                124 tests
+tests/                142 tests, incl. tests/js/ui.test.js (jsdom)
 ```
 
 ## Licence

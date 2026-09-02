@@ -18,6 +18,7 @@ suppression list so no campaign can contact it again.
 
 from __future__ import annotations
 
+import contextlib
 import email
 import email.policy
 import imaplib
@@ -35,7 +36,6 @@ from ..db import session_scope
 from ..models import (
     Activity,
     Campaign,
-    CampaignStatus,
     EmailAccount,
     Lead,
     LeadStatus,
@@ -222,10 +222,8 @@ class ImapInbox:
             status, data = client.status("INBOX", "(MESSAGES)")
             return True, f"IMAP OK ({status}: {data})"
         finally:
-            try:
+            with contextlib.suppress(Exception):  # pragma: no cover
                 client.logout()
-            except Exception:  # pragma: no cover
-                pass
 
     def fetch_since(self, since: datetime, limit: int = 100) -> list[FetchedMessage]:
         client = self.connect()
@@ -245,10 +243,8 @@ class ImapInbox:
                 if parsed:
                     out.append(parsed)
         finally:
-            try:
+            with contextlib.suppress(Exception):  # pragma: no cover
                 client.logout()
-            except Exception:  # pragma: no cover
-                pass
         return out
 
 

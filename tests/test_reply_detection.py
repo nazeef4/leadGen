@@ -2,12 +2,20 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 import pytest
 
-from leadgen.models import Intent, Lead, LeadStatus, OutboundMessage, PipelineStage, Reply, Suppression
 from leadgen.db import session_scope
+from leadgen.models import (
+    Intent,
+    Lead,
+    LeadStatus,
+    OutboundMessage,
+    PipelineStage,
+    Reply,
+    Suppression,
+)
 from leadgen.services.classifier import classify_reply, summarise, wants_unsubscribe
 from leadgen.services.inbox_sync import (
     FetchedMessage,

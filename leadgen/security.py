@@ -7,6 +7,7 @@ Fernet symmetric encryption.  Everything stays on the user's machine.
 
 from __future__ import annotations
 
+import contextlib
 from pathlib import Path
 
 from cryptography.fernet import Fernet, InvalidToken
@@ -27,10 +28,9 @@ class Vault:
             else:
                 key = Fernet.generate_key()
                 self.key_path.write_bytes(key)
-                try:
+                # Best effort: exotic filesystems may reject chmod.  # pragma: no cover
+                with contextlib.suppress(OSError):
                     self.key_path.chmod(0o600)
-                except OSError:  # pragma: no cover - best effort on exotic filesystems
-                    pass
             self._fernet = Fernet(key)
         return self._fernet
 

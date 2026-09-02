@@ -11,6 +11,7 @@ network — used by the preview mode and by the test suite.
 
 from __future__ import annotations
 
+import contextlib
 import logging
 import smtplib
 import ssl as ssl_module
@@ -156,10 +157,8 @@ class SmtpSender:
             server.noop()
             return True, "SMTP login OK"
         finally:
-            try:
+            with contextlib.suppress(Exception):  # pragma: no cover
                 server.quit()
-            except Exception:  # pragma: no cover
-                pass
 
     def send(self, payload: MessagePayload) -> SendResult:
         started = time.monotonic()
@@ -221,10 +220,8 @@ class SmtpSender:
                 message_id=payload.message_id, duration_ms=_ms(started),
             )
         finally:
-            try:
+            with contextlib.suppress(Exception):  # pragma: no cover
                 server.quit()
-            except Exception:  # pragma: no cover
-                pass
 
 
 class DryRunSender:

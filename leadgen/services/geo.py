@@ -437,7 +437,7 @@ class GeoService:
         return "; ".join(labels) + suffix
 
 
-def _place_key(place: "Place") -> str:
+def _place_key(place: Place) -> str:
     """Single dedupe namespace shared by every expansion path."""
     return f"{place.country_code}:{place.state_code}:{place.city or place.state or ''}"
 

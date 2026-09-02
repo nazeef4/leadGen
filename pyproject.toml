@@ -21,6 +21,7 @@ dependencies = [
     "lxml>=5.2",
     "python-dotenv>=1.0",
     "dnspython>=2.6",
+    "cryptography>=42.0",
 ]
 
 [project.optional-dependencies]
@@ -34,9 +35,38 @@ leadgen = "leadgen.cli:main"
 include = ["leadgen*"]
 
 [tool.setuptools.package-data]
-"leadgen" = ["data/*.json", "data/geo/*.json", "static/**/*", "templates/email/*.html"]
+"leadgen" = ["data/*.json", "data/geo/*.json", "static/**/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
 filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+extend-exclude = ["build", "dist"]
+
+[tool.ruff.lint]
+# Deliberate, reproducible rule set. Ruff's built-in default has changed across
+# versions, so the project pins what it wants rather than inheriting it.
+select = [
+    "E4",   # imports
+    "E7",   # statements
+    "E9",   # syntax / runtime errors
+    "F",    # pyflakes: unused names, undefined names, redefinitions
+    "I",    # import sorting
+    "UP",   # pyupgrade: modern syntax for the declared target-version
+            # (py310, so UP017 will not rewrite timezone.utc to the 3.11-only datetime.UTC)
+    "B",    # bugbear: mutable defaults, late bindings, except-pass
+    "SIM",  # simplifiable constructs
+]
+ignore = [
+    # FastAPI idiom: Depends()/Query() calls in signature defaults.
+    "B008",
+    # Long-lived module singletons (get_engine, get_geo_service) are intentional.
+    "B019",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]

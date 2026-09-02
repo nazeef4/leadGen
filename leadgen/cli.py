@@ -64,16 +64,15 @@ def _serve_desktop(host: str, port: int) -> int:  # pragma: no cover - needs a G
     import time
 
     time.sleep(1.5)
-    window = webview.create_window("LeadGen Studio", f"http://{host}:{port}", width=1440, height=900)
+    webview.create_window("LeadGen Studio", f"http://{host}:{port}", width=1440, height=900)
     webview.start()
     server.should_exit = True
     return 0
 
 
 def cmd_demo(args: argparse.Namespace) -> int:
-    from scripts.seed_demo import seed
-
     from .db import create_all, init_engine
+    from .demo_data import seed
 
     init_engine(get_settings())
     create_all()
@@ -145,7 +144,7 @@ def cmd_preview(args: argparse.Namespace) -> int:
 
 
 def cmd_doctor(_args: argparse.Namespace) -> int:
-    from .db import create_all, init_engine, get_engine
+    from .db import create_all, init_engine
     from .services.geo import get_geo_service
     from .services.llm import get_llm
     from .services.scrapers.pipeline import SCRAPER_REGISTRY, get_pipeline
@@ -160,7 +159,7 @@ def cmd_doctor(_args: argparse.Namespace) -> int:
     print(f"geo dataset    : {len(geo.countries())} countries")
     print(f"llm            : {get_llm().info()}")
     pipeline = get_pipeline()
-    for name, cls in SCRAPER_REGISTRY.items():
+    for name in SCRAPER_REGISTRY:
         available = pipeline.build_scraper(name) is not None
         print(f"scraper {name:<14}: {'available' if available else 'unavailable (needs API key)'}")
     print(f"daily cap      : {settings.daily_recipient_cap} recipients")

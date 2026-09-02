@@ -60,7 +60,7 @@ class OfferConfig:
     extra_note: str = ""
 
     @classmethod
-    def from_dict(cls, data: dict | None) -> "OfferConfig":
+    def from_dict(cls, data: dict | None) -> OfferConfig:
         data = data or {}
         try:
             discount = int(data.get("discount_percent") or 0)
@@ -385,6 +385,38 @@ class Copywriter:
             return f"{name} · {address} · Unsubscribe: {self.settings.unsubscribe_url}"
         return f"{name} · {address} · Reply STOP to unsubscribe"
 
+    def _max_subject_length(self) -> int:
+        """Subject limit from the compliance rules (single source of truth)."""
+        from .compliance import get_compliance_engine
+
+        return int(get_compliance_engine().rules.get("maxSubjectLength", 70))
+
+    def _choose_subject(self, template: Template, rng: random.Random, fields: dict) -> str:
+        """Pick a subject that the compliance engine will not flag as too long.
+
+        The seeded variant is used when it fits, so existing copy is unchanged.
+        Only when it overflows the limit do we fall back to the shortest variant
+        that fits — still fully deterministic, because each variant is expanded
+        with its own index-seeded RNG rather than by consuming the main stream.
+        """
+        raw = rng.choice(template.subjects)
+        chosen = resolve_tags(expand_spintax(raw, rng), fields)
+        limit = self._max_subject_length()
+        if len(chosen) <= limit:
+            return chosen
+
+        # Overflow: fall back to the variants that fit, keeping the seeded
+        # rotation so subject lines still vary across recipients. Each variant
+        # is expanded with its own index-seeded RNG so the main stream (and
+        # therefore the body copy) is untouched.
+        variants = [
+            resolve_tags(expand_spintax(v, random.Random(index)), fields)
+            for index, v in enumerate(template.subjects)
+        ]
+        fitting = [s for s in variants if len(s) <= limit] or variants
+        slot = template.subjects.index(raw) % len(fitting)
+        return fitting[slot]
+
     def generate_offline(
         self,
         lead: dict,
@@ -403,7 +435,7 @@ class Copywriter:
         )
         fields = self.build_fields(lead, campaign, offers, hooks)
 
-        subject = resolve_tags(expand_spintax(rng.choice(template.subjects), rng), fields)
+        subject = self._choose_subject(template, rng, fields)
         opening = resolve_tags(expand_spintax(rng.choice(template.openings), rng), fields)
         bridge = resolve_tags(expand_spintax(rng.choice(template.bridges), rng), fields)
         closer = resolve_tags(expand_spintax(rng.choice(template.closers), rng), fields)

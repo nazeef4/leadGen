@@ -61,9 +61,7 @@ def is_plausible_email(address: str) -> bool:
         return False
     if ".." in domain or domain.startswith(".") or domain.endswith("."):
         return False
-    if "." not in domain:
-        return False
-    return True
+    return "." in domain
 
 
 def classify_email(address: str) -> EmailCandidate:

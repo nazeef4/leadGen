@@ -68,7 +68,6 @@ def test_search_finds_each_level():
 
 
 def test_validate_reports_unknown_selections():
-    geo = GeoService()
     problems = GeoService.validate({"selections": [{"country": "XX", "state": "*", "city": "*"}]})
     assert any("Unknown country" in p for p in problems)
     assert GeoService.validate({"selections": [{"country": "US", "state": "AZ", "city": "Phoenix"}]}) == []

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import random
 import re
 
 import pytest
@@ -12,10 +13,10 @@ from leadgen.services.copywriter import (
     OfferConfig,
     expand_spintax,
     first_name_of,
+    get_copywriter,
     resolve_tags,
     stable_seed,
 )
-import random
 
 LEAD = {
     "id": 7,
@@ -173,3 +174,68 @@ def test_service_grammar_reads_naturally(writer):
     copy = writer.generate_offline(LEAD, CAMPAIGN, OfferConfig(), HOOKS)
     assert "contracts engagements" not in copy.body_text
     assert "HVAC teams" in copy.body_text or "HVAC contractor" in copy.body_text
+
+
+# --------------------------------------------------------------------------
+# Regression: the generator must not produce copy its own compliance engine
+# rejects. Every template x seed combination has to score 100.
+# --------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize("template_key", ["consultative", "direct", "proof", "local"])
+def test_every_generated_email_scores_100(template_key):
+    from leadgen.services.compliance import ComplianceEngine
+
+    cw = get_copywriter()
+    eng = ComplianceEngine()
+    offers = OfferConfig(
+        free_demo_call=True, free_audit=True, case_study=True, discount_percent=50,
+        limited_slots=3, guarantee="no results, no invoice", local_reference=True,
+        no_follow_up_pressure=True, calendar_url="https://cal.com/x/15min",
+    )
+    lead = {
+        "id": 7, "business_name": "Desert Air Cooling", "first_name": "there",
+        "category": "industrial HVAC contractor", "city": "Phoenix", "state": "AZ",
+        "email": "ops@desertair.example.com",
+    }
+    campaign = {"service_offering": "commercial HVAC maintenance contracts", "niche": "HVAC"}
+
+    for seed in range(40):
+        copy = cw.generate_offline(lead, campaign, offers, template_key=template_key, seed=seed)
+        report = eng.check_content(copy.subject, copy.body_text)
+        assert report.score == 100, (
+            f"{template_key} seed={seed} scored {report.score}: "
+            f"{[(i.severity, i.code, i.message) for i in report.issues]}"
+        )
+        assert not report.blocked
+
+
+def test_subjects_rotate_instead_of_collapsing_to_one_variant():
+    """
+    When the seeded subject overflows the limit we fall back to a fitting
+    variant — but it must still rotate, or every recipient gets an identical
+    subject line, which is itself a spam signal.
+    """
+    cw = get_copywriter()
+    lead = {
+        "id": 3, "business_name": "Desert Air Cooling", "first_name": "there",
+        "category": "HVAC contractor", "city": "Phoenix", "state": "AZ",
+        "email": "ops@desertair.example.com",
+    }
+    campaign = {"service_offering": "commercial HVAC maintenance contracts", "niche": "HVAC"}
+    subjects = {
+        cw.generate_offline(lead, campaign, template_key="local", seed=s).subject
+        for s in range(12)
+    }
+    assert len(subjects) >= 2, f"subject lines collapsed to one variant: {subjects}"
+
+
+def test_generation_is_deterministic_for_a_given_seed():
+    cw = get_copywriter()
+    lead = {"id": 11, "business_name": "Summit Roofing", "email": "a@b.example.com",
+            "category": "Roofing contractor", "city": "Tucson", "state": "AZ"}
+    campaign = {"service_offering": "roof maintenance", "niche": "roofing"}
+    first = cw.generate_offline(lead, campaign, template_key="proof", seed=5)
+    second = cw.generate_offline(lead, campaign, template_key="proof", seed=5)
+    assert first.subject == second.subject
+    assert first.body_text == second.body_text

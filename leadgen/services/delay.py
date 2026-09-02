@@ -132,7 +132,7 @@ def next_business_moment(moment: datetime, cfg: DelayConfig) -> datetime:
     local = moment
     for _ in range(8):
         hour = local.hour
-        if start <= end:
+        if start <= end:  # noqa: SIM108 - clearer than a ternary with the wrap case
             blocked = start <= hour < end
         else:  # wraps midnight, e.g. 20:00 -> 08:00
             blocked = hour >= start or hour < end

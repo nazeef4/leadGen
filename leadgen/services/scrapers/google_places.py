@@ -13,7 +13,7 @@ import os
 
 import httpx
 
-from ...config import Settings, get_settings
+from ...config import Settings
 from .base import BaseScraper, ScrapedLead, clean_text
 
 log = logging.getLogger("leadgen.scrape.places")

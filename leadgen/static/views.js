@@ -161,21 +161,23 @@ Views.targeting = async () => {
   ]));
 
   /* ---------------------------------------------------------- geo picker */
+  // Explicit element references. The card is not in the document yet when this
+  // runs, so document-level queries would return nothing here.
+  const citySel = h('select', { disabled: true }, [h('option', { value: '*' }, 'All cities')]);
+  const stateSel = h('select', { disabled: true }, [
+    h('option', { value: '*' }, 'All states / provinces'),
+  ]);
+  const countrySel = h('select', {}, countries.map((c) => h('option', {
+    value: c.code,
+  }, `${c.name} (${c.cityCount} cities)`)));
+  countrySel.addEventListener('change', () => loadStates(countrySel.value));
+  stateSel.addEventListener('change', () => loadCities(countrySel.value, stateSel.value));
+
   const geoCard = h('div', { class: 'card' }, [
     h('h2', {}, 'Where should we look?'),
     h('p', { class: 'muted' }, 'Drill into country → state → city, or pick "All" at any level. Free-text cities are supported for anything not listed.'),
-    h('div', { class: 'row' }, [
-      (() => {
-        const sel = h('select', {}, countries.map((c) => h('option', { value: c.code }, `${c.name} (${c.cityCount} cities)`)));
-        sel.addEventListener('change', () => loadStates(sel.value, stateSel, cityBox));
-        return sel;
-      })(),
-      (() => { return h('select', { disabled: true }, [h('option', { value: '*' }, 'All states / provinces')]); })(),
-      h('div', {}, cityBox()),
-    ]),
+    h('div', { class: 'row' }, [countrySel, stateSel, citySel]),
   ]);
-  const stateSel = $$('#app select')[1];
-  const cityHost = geoCard.querySelector('.row').children[2];
 
   const selBox = h('div', { class: 'chips', style: 'margin-top:10px' });
   function renderSelections() {
@@ -197,10 +199,9 @@ Views.targeting = async () => {
   const addBtn = h('button', {
     class: 'btn small',
     onclick: () => {
-      const country = geoCard.querySelector('select').value;
-      const state = stateSel.value || '*';
-      const citySel = cityHost.querySelector('select');
-      const city = citySel && !citySel.disabled ? citySel.value : '*';
+      const country = countrySel.value;
+      const state = stateSel.disabled ? '*' : (stateSel.value || '*');
+      const city = citySel.disabled ? '*' : (citySel.value || '*');
       const entry = { country, state, city };
       const exists = State.geoSelections.some((s) => JSON.stringify(s) === JSON.stringify(entry));
       if (!exists) State.geoSelections.push(entry);
@@ -226,34 +227,30 @@ Views.targeting = async () => {
   wrap.appendChild(geoCard);
   renderSelections();
 
-  async function loadStates(code, stateSelect, cityContainer) {
+  async function loadStates(code) {
     const data = await API.get(`/api/targeting/countries/${code}/states`);
-    stateSelect.innerHTML = '';
-    stateSelect.disabled = false;
-    stateSelect.appendChild(h('option', { value: '*' }, `All ${data.states.length} states/provinces`));
-    data.states.forEach((s) => stateSelect.appendChild(h('option', { value: s.code }, `${s.name} (${s.cityCount})`)));
-    stateSelect.onchange = () => loadCities(code, stateSelect.value, cityContainer);
-    cityContainer.innerHTML = '';
-    const disabled = h('select', { disabled: true }, [h('option', {}, 'All cities')]);
-    cityContainer.appendChild(disabled);
+    stateSel.innerHTML = '';
+    stateSel.disabled = false;
+    stateSel.appendChild(h('option', { value: '*' }, `All ${data.states.length} states/provinces`));
+    data.states.forEach((s) => stateSel.appendChild(h('option', {
+      value: s.code,
+    }, `${s.name} (${s.cityCount})`)));
+    await loadCities(code, '*');
   }
 
-  async function loadCities(country, state, container) {
-    container.innerHTML = '';
+  async function loadCities(country, state) {
+    citySel.innerHTML = '';
     if (state === '*') {
-      container.appendChild(h('select', { disabled: true }, [h('option', {}, 'All cities')]));
+      citySel.disabled = true;
+      citySel.appendChild(h('option', { value: '*' }, 'All cities'));
       return;
     }
     const data = await API.get(`/api/targeting/countries/${country}/states/${state}/cities`);
-    const sel = h('select', {}, [h('option', { value: '*' }, `All ${data.cities.length} cities`)]);
-    data.cities.forEach((c) => sel.appendChild(h('option', { value: c.name }, `${c.name} — ${c.avgSummerC}°C, ${c.climate.join('/')}`)));
-    container.appendChild(sel);
-  }
-
-  function cityBox() {
-    const div = h('div', {});
-    div.appendChild(h('select', { disabled: true }, [h('option', {}, 'All cities')]));
-    return div;
+    citySel.disabled = false;
+    citySel.appendChild(h('option', { value: '*' }, `All ${data.cities.length} cities`));
+    data.cities.forEach((c) => citySel.appendChild(h('option', {
+      value: c.name,
+    }, `${c.name} — ${c.avgSummerC}°C, ${c.climate.join('/')}`)));
   }
 
   wrap.appendChild(topBox);
@@ -686,7 +683,8 @@ Views.compose = async () => {
         campaign_id: State.campaignId, offers: State.offer, prefer_llm: useLlm.checked, limit: 3,
       });
       previewHost.innerHTML = '';
-      data.previews.forEach((p) => {
+      // for..of, not forEach: the callback is async.
+      for (const p of data.previews) {
         const report = await API.post('/api/campaigns/compliance-check', {
           subject: p.subject, body_text: p.bodyText, body_html: p.bodyHtml,
         });
@@ -705,7 +703,7 @@ Views.compose = async () => {
               ])))
             : h('p', { class: 'muted', style: 'margin-top:10px' }, 'No compliance issues detected.'),
         ]));
-      });
+      }
     } catch (err) {
       previewHost.innerHTML = '';
       previewHost.appendChild(h('div', { class: 'card' }, [emptyState(err.message)]));

@@ -92,6 +92,27 @@ loop:
 Quota is recomputed from the database before every send rather than tracked in a
 counter, so two runs, a restart or a manual send cannot drift the accounting.
 
+### The burst check runs *before* the gap is slept
+
+This ordering is load-bearing. The compliance check happens before the
+dispatcher sleeps the slot's humanised gap, so at the moment of the check the
+last send may be only milliseconds old. `check_behaviour()` therefore takes the
+gap that is about to be slept as `pending_gap_seconds` and measures the interval
+as `elapsed + pending_gap`. Without that, the burst guardrail sees a ~0s gap and
+blocks every send after the first with "Only 0s since the last send".
+
+Two pacing knobs interact here:
+
+* `DelayConfig.min_seconds` — the campaign's own pacing, passed in as
+  `min_gap_seconds`. **The campaign governs**, so a 10s campaign gap is honoured
+  even though the global default is 45s.
+* `Settings.min_delay_seconds` — the global default, used only when a campaign
+  does not set one. A hard 5s floor applies regardless.
+
+The hourly cap is likewise clamped to the effective daily cap when the config is
+built, otherwise a campaign capped at 50/day with a 60/hour global setting
+reports an impossible configuration.
+
 ## Reply matching
 
 `InboxSyncService.ingest()` is deliberately transport-free — it takes parsed

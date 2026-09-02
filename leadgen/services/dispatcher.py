@@ -20,7 +20,7 @@ import logging
 import threading
 import time
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 
 from sqlalchemy import func, select
 
@@ -40,7 +40,7 @@ from ..models import (
 from ..security import get_vault
 from .compliance import get_compliance_engine
 from .copywriter import OfferConfig, get_copywriter
-from .delay import DelayConfig, DelayPlanner, hour_window, is_within_quiet_hours, utcnow
+from .delay import DelayConfig, DelayPlanner, is_within_quiet_hours, utcnow
 from .niche_advisor import get_niche_advisor
 from .sender import DryRunSender, MessagePayload, SmtpSender, new_thread_id
 
