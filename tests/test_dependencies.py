@@ -8,6 +8,8 @@ between what the code imports and what the metadata promises.
 from __future__ import annotations
 
 import ast
+import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -129,4 +131,28 @@ def test_console_script_points_at_a_real_callable():
     assert module_file.exists(), f"console script target {module_path} does not exist"
     assert attr in module_file.read_text(encoding="utf-8"), (
         f"console script entry {attr} is not defined in {module_path}"
+    )
+
+
+def test_readme_test_count_is_accurate():
+    """
+    The advertised test count drifted twice in one session. Rather than trust a
+    hand-edited number, assert the README only mentions counts that are true.
+    """
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+    claimed = {int(m) for m in re.findall(r"#\s*(\d+)\s+tests", readme)}
+    claimed |= {int(m) for m in re.findall(r"tests/\s+(\d+)\s+tests", readme)}
+    assert claimed, "README no longer advertises a test count; update this test"
+
+    collected = subprocess.run(
+        [sys.executable, "-m", "pytest", "-q", "--collect-only"],
+        capture_output=True, text=True, cwd=str(ROOT),
+    )
+    match = re.search(r"(\d+) tests collected", collected.stdout)
+    assert match, f"could not determine the collected test count:\n{collected.stdout[-500:]}"
+    actual = int(match.group(1))
+
+    assert claimed == {actual}, (
+        f"README advertises {sorted(claimed)} tests but pytest collects {actual}"
     )
