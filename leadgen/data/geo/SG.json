@@ -1,0 +1,24 @@
+{
+  "code": "SG",
+  "name": "Singapore",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "states": [
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "cities": [
+        {
+          "name": "Singapore",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 3
+        }
+      ]
+    }
+  ]
+}

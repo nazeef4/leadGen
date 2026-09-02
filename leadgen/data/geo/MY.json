@@ -1,0 +1,99 @@
+{
+  "code": "MY",
+  "name": "Malaysia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "states": [
+    {
+      "code": "01",
+      "name": "Johor",
+      "cities": [
+        {
+          "name": "Johor Bahru",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "name": "Kuala Lumpur",
+      "cities": [
+        {
+          "name": "Kuala Lumpur",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "name": "Penang",
+      "cities": [
+        {
+          "name": "George Town",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Butterworth",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "name": "Selangor",
+      "cities": [
+        {
+          "name": "Petaling Jaya",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Shah Alam",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Klang",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

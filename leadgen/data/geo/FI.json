@@ -1,0 +1,58 @@
+{
+  "code": "FI",
+  "name": "Finland",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "states": [
+    {
+      "code": "06",
+      "name": "Pirkanmaa",
+      "cities": [
+        {
+          "name": "Tampere",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "name": "Uusimaa",
+      "cities": [
+        {
+          "name": "Helsinki",
+          "climate": [
+            "coastal",
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        },
+        {
+          "name": "Espoo",
+          "climate": [
+            "coastal",
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        },
+        {
+          "name": "Vantaa",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

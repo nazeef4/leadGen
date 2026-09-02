@@ -1,0 +1,102 @@
+{
+  "code": "NZ",
+  "name": "New Zealand",
+  "region": "Oceania",
+  "subregion": "Australasia",
+  "states": [
+    {
+      "code": "AUK",
+      "name": "Auckland",
+      "cities": [
+        {
+          "name": "Auckland",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 2
+        },
+        {
+          "name": "Manukau",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CAN",
+      "name": "Canterbury",
+      "cities": [
+        {
+          "name": "Christchurch",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Timaru",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "HKB",
+      "name": "Hawke's Bay",
+      "cities": [
+        {
+          "name": "Napier",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        },
+        {
+          "name": "Hastings",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WGN",
+      "name": "Wellington",
+      "cities": [
+        {
+          "name": "Wellington",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        },
+        {
+          "name": "Lower Hutt",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "code": "SA",
+  "name": "Saudi Arabia",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "states": [
+    {
+      "code": "04",
+      "name": "Eastern Province",
+      "cities": [
+        {
+          "name": "Dammam",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        },
+        {
+          "name": "Khobar",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        },
+        {
+          "name": "Dhahran",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        },
+        {
+          "name": "Al Jubail",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 43,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "name": "Madinah",
+      "cities": [
+        {
+          "name": "Madinah",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 44,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "name": "Makkah",
+      "cities": [
+        {
+          "name": "Jeddah",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 2
+        },
+        {
+          "name": "Makkah",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 43,
+          "popTier": 1
+        },
+        {
+          "name": "Taif",
+          "climate": [
+            "arid",
+            "mountain"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "01",
+      "name": "Riyadh",
+      "cities": [
+        {
+          "name": "Riyadh",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 43,
+          "popTier": 3
+        }
+      ]
+    }
+  ]
+}

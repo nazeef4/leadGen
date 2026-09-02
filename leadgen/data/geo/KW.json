@@ -1,0 +1,36 @@
+{
+  "code": "KW",
+  "name": "Kuwait",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "states": [
+    {
+      "code": "KU",
+      "name": "Al Asimah",
+      "cities": [
+        {
+          "name": "Kuwait City",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 45,
+          "popTier": 2
+        },
+        {
+          "name": "Hawalli",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 45,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

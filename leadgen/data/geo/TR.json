@@ -1,0 +1,95 @@
+{
+  "code": "TR",
+  "name": "Turkey",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "states": [
+    {
+      "code": "06",
+      "name": "Ankara",
+      "cities": [
+        {
+          "name": "Ankara",
+          "climate": [
+            "continental",
+            "hot"
+          ],
+          "avgSummerC": 31,
+          "popTier": 3
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "name": "Antalya",
+      "cities": [
+        {
+          "name": "Antalya",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        },
+        {
+          "name": "Alanya",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "name": "Bursa",
+      "cities": [
+        {
+          "name": "Bursa",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "name": "Istanbul",
+      "cities": [
+        {
+          "name": "Istanbul",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 4
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "name": "Izmir",
+      "cities": [
+        {
+          "name": "Izmir",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 34,
+          "popTier": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "code": "KR",
+  "name": "South Korea",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "states": [
+    {
+      "code": "26",
+      "name": "Busan",
+      "cities": [
+        {
+          "name": "Busan",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "name": "Incheon",
+      "cities": [
+        {
+          "name": "Incheon",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "name": "Seoul",
+      "cities": [
+        {
+          "name": "Seoul",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 4
+        },
+        {
+          "name": "Gangnam",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

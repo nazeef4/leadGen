@@ -1,0 +1,260 @@
+{
+  "code": "DE",
+  "name": "Germany",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "states": [
+    {
+      "code": "BW",
+      "name": "Baden-Wurttemberg",
+      "cities": [
+        {
+          "name": "Stuttgart",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Karlsruhe",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Mannheim",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Freiburg",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "BY",
+      "name": "Bavaria",
+      "cities": [
+        {
+          "name": "Munich",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 2
+        },
+        {
+          "name": "Nuremberg",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Augsburg",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Wurzburg",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "BE",
+      "name": "Berlin",
+      "cities": [
+        {
+          "name": "Berlin",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "HH",
+      "name": "Hamburg",
+      "cities": [
+        {
+          "name": "Hamburg",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "HE",
+      "name": "Hesse",
+      "cities": [
+        {
+          "name": "Frankfurt",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Wiesbaden",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Darmstadt",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NI",
+      "name": "Lower Saxony",
+      "cities": [
+        {
+          "name": "Hanover",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Braunschweig",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Osnabruck",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NW",
+      "name": "North Rhine-Westphalia",
+      "cities": [
+        {
+          "name": "Cologne",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        },
+        {
+          "name": "Dusseldorf",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Dortmund",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Essen",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Bonn",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Munster",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Saxony",
+      "cities": [
+        {
+          "name": "Leipzig",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Dresden",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

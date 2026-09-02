@@ -1,0 +1,290 @@
+{
+  "code": "ES",
+  "name": "Spain",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "states": [
+    {
+      "code": "AN",
+      "name": "Andalusia",
+      "cities": [
+        {
+          "name": "Seville",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 37,
+          "popTier": 2
+        },
+        {
+          "name": "Malaga",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Cordoba",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 39,
+          "popTier": 1
+        },
+        {
+          "name": "Granada",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        },
+        {
+          "name": "Marbella",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Almeria",
+          "climate": [
+            "arid",
+            "coastal",
+            "hot"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PV",
+      "name": "Basque Country",
+      "cities": [
+        {
+          "name": "Bilbao",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "San Sebastian",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Vitoria-Gasteiz",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CL",
+      "name": "Castile and Leon",
+      "cities": [
+        {
+          "name": "Valladolid",
+          "climate": [
+            "continental",
+            "hot"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Burgos",
+          "climate": [
+            "continental"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Salamanca",
+          "climate": [
+            "continental",
+            "hot"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Catalonia",
+      "cities": [
+        {
+          "name": "Barcelona",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        },
+        {
+          "name": "L'Hospitalet",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Tarragona",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Girona",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Galicia",
+      "cities": [
+        {
+          "name": "Vigo",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "A Coruna",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Madrid",
+      "cities": [
+        {
+          "name": "Madrid",
+          "climate": [
+            "continental",
+            "hot"
+          ],
+          "avgSummerC": 33,
+          "popTier": 3
+        },
+        {
+          "name": "Alcala de Henares",
+          "climate": [
+            "continental",
+            "hot"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Mostoles",
+          "climate": [
+            "continental",
+            "hot"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MU",
+      "name": "Murcia",
+      "cities": [
+        {
+          "name": "Murcia",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        },
+        {
+          "name": "Cartagena",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "VC",
+      "name": "Valencia",
+      "cities": [
+        {
+          "name": "Valencia",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        },
+        {
+          "name": "Alicante",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Castellon",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

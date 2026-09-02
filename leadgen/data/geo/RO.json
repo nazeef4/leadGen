@@ -1,0 +1,53 @@
+{
+  "code": "RO",
+  "name": "Romania",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "states": [
+    {
+      "code": "B",
+      "name": "Bucharest",
+      "cities": [
+        {
+          "name": "Bucharest",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "CJ",
+      "name": "Cluj",
+      "cities": [
+        {
+          "name": "Cluj-Napoca",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "TM",
+      "name": "Timis",
+      "cities": [
+        {
+          "name": "Timisoara",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

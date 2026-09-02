@@ -1,0 +1,85 @@
+{
+  "code": "PH",
+  "name": "Philippines",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "states": [
+    {
+      "code": "CEB",
+      "name": "Cebu",
+      "cities": [
+        {
+          "name": "Cebu City",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "DAV",
+      "name": "Davao",
+      "cities": [
+        {
+          "name": "Davao City",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NCR",
+      "name": "Metro Manila",
+      "cities": [
+        {
+          "name": "Manila",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 3
+        },
+        {
+          "name": "Quezon City",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 3
+        },
+        {
+          "name": "Makati",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Taguig",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

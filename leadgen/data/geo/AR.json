@@ -1,0 +1,101 @@
+{
+  "code": "AR",
+  "name": "Argentina",
+  "region": "Americas",
+  "subregion": "South America",
+  "states": [
+    {
+      "code": "C",
+      "name": "Buenos Aires City",
+      "cities": [
+        {
+          "name": "Buenos Aires",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 4
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Buenos Aires Province",
+      "cities": [
+        {
+          "name": "La Plata",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Mar del Plata",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "X",
+      "name": "Cordoba",
+      "cities": [
+        {
+          "name": "Cordoba",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "M",
+      "name": "Mendoza",
+      "cities": [
+        {
+          "name": "Mendoza",
+          "climate": [
+            "arid",
+            "mountain"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "S",
+      "name": "Santa Fe",
+      "cities": [
+        {
+          "name": "Rosario",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Santa Fe",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

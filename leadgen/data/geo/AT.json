@@ -1,0 +1,68 @@
+{
+  "code": "AT",
+  "name": "Austria",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "states": [
+    {
+      "code": "8",
+      "name": "Styria",
+      "cities": [
+        {
+          "name": "Graz",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "name": "Tyrol",
+      "cities": [
+        {
+          "name": "Innsbruck",
+          "climate": [
+            "mountain",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "name": "Upper Austria",
+      "cities": [
+        {
+          "name": "Linz",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "name": "Vienna",
+      "cities": [
+        {
+          "name": "Vienna",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        }
+      ]
+    }
+  ]
+}

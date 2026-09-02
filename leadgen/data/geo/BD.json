@@ -1,0 +1,48 @@
+{
+  "code": "BD",
+  "name": "Bangladesh",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "states": [
+    {
+      "code": "B",
+      "name": "Chattogram",
+      "cities": [
+        {
+          "name": "Chattogram",
+          "climate": [
+            "coastal",
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "name": "Dhaka",
+      "cities": [
+        {
+          "name": "Dhaka",
+          "climate": [
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 4
+        },
+        {
+          "name": "Gazipur",
+          "climate": [
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

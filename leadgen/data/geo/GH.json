@@ -1,0 +1,49 @@
+{
+  "code": "GH",
+  "name": "Ghana",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "states": [
+    {
+      "code": "AH",
+      "name": "Ashanti",
+      "cities": [
+        {
+          "name": "Kumasi",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "AA",
+      "name": "Greater Accra",
+      "cities": [
+        {
+          "name": "Accra",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 3
+        },
+        {
+          "name": "Tema",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "code": "MA",
+  "name": "Morocco",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "states": [
+    {
+      "code": "06",
+      "name": "Casablanca-Settat",
+      "cities": [
+        {
+          "name": "Casablanca",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 3
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "name": "Fes-Meknes",
+      "cities": [
+        {
+          "name": "Fes",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 37,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "name": "Marrakech-Safi",
+      "cities": [
+        {
+          "name": "Marrakech",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "name": "Rabat-Sale-Kenitra",
+      "cities": [
+        {
+          "name": "Rabat",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

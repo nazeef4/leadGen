@@ -1,0 +1,2303 @@
+{
+  "code": "US",
+  "name": "United States",
+  "region": "Americas",
+  "subregion": "North America",
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "cities": [
+        {
+          "name": "Birmingham",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        },
+        {
+          "name": "Huntsville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Mobile",
+          "climate": [
+            "coastal",
+            "humid"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Montgomery",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "cities": [
+        {
+          "name": "Anchorage",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        },
+        {
+          "name": "Fairbanks",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Juneau",
+          "climate": [
+            "coastal",
+            "cold"
+          ],
+          "avgSummerC": 18,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "cities": [
+        {
+          "name": "Phoenix",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 41,
+          "popTier": 3
+        },
+        {
+          "name": "Tucson",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 2
+        },
+        {
+          "name": "Mesa",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 2
+        },
+        {
+          "name": "Scottsdale",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 41,
+          "popTier": 1
+        },
+        {
+          "name": "Flagstaff",
+          "climate": [
+            "arid",
+            "mountain"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Yuma",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "cities": [
+        {
+          "name": "Little Rock",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Fayetteville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Fort Smith",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "cities": [
+        {
+          "name": "Los Angeles",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 4
+        },
+        {
+          "name": "San Diego",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        },
+        {
+          "name": "San Jose",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "San Francisco",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Fresno",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        },
+        {
+          "name": "Sacramento",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 37,
+          "popTier": 1
+        },
+        {
+          "name": "Riverside",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 2
+        },
+        {
+          "name": "Bakersfield",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 39,
+          "popTier": 1
+        },
+        {
+          "name": "Anaheim",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Stockton",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        },
+        {
+          "name": "Long Beach",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Palm Springs",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 43,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "cities": [
+        {
+          "name": "Denver",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        },
+        {
+          "name": "Colorado Springs",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Aurora",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Fort Collins",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Boulder",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "cities": [
+        {
+          "name": "Bridgeport",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "New Haven",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Hartford",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Stamford",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "cities": [
+        {
+          "name": "Wilmington",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Dover",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "cities": [
+        {
+          "name": "Washington",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "cities": [
+        {
+          "name": "Miami",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Jacksonville",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Tampa",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Orlando",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Tallahassee",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Fort Lauderdale",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Naples",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Sarasota",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Key West",
+          "climate": [
+            "coastal",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Gainesville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "cities": [
+        {
+          "name": "Atlanta",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        },
+        {
+          "name": "Savannah",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Augusta",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Columbus",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Macon",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "cities": [
+        {
+          "name": "Honolulu",
+          "climate": [
+            "coastal",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Hilo",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Kailua",
+          "climate": [
+            "coastal",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "cities": [
+        {
+          "name": "Boise",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Meridian",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Idaho Falls",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "cities": [
+        {
+          "name": "Chicago",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 3
+        },
+        {
+          "name": "Aurora",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Rockford",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Naperville",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Peoria",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "cities": [
+        {
+          "name": "Indianapolis",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Fort Wayne",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Evansville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "South Bend",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "cities": [
+        {
+          "name": "Des Moines",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Cedar Rapids",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Davenport",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "cities": [
+        {
+          "name": "Wichita",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Overland Park",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Kansas City",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Topeka",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "cities": [
+        {
+          "name": "Louisville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Lexington",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Bowling Green",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "cities": [
+        {
+          "name": "New Orleans",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Baton Rouge",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Shreveport",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        },
+        {
+          "name": "Lafayette",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "cities": [
+        {
+          "name": "Portland",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Bangor",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "cities": [
+        {
+          "name": "Baltimore",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        },
+        {
+          "name": "Columbia",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Annapolis",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "cities": [
+        {
+          "name": "Boston",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Worcester",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Springfield",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Cambridge",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "cities": [
+        {
+          "name": "Detroit",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Grand Rapids",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Ann Arbor",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Lansing",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "cities": [
+        {
+          "name": "Minneapolis",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Saint Paul",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Rochester",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Duluth",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "cities": [
+        {
+          "name": "Jackson",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Gulfport",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Hattiesburg",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "cities": [
+        {
+          "name": "Kansas City",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "St. Louis",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        },
+        {
+          "name": "Springfield",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Columbia",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "cities": [
+        {
+          "name": "Billings",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Missoula",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Bozeman",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Great Falls",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "cities": [
+        {
+          "name": "Omaha",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Lincoln",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Bellevue",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "cities": [
+        {
+          "name": "Las Vegas",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 41,
+          "popTier": 2
+        },
+        {
+          "name": "Henderson",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 41,
+          "popTier": 1
+        },
+        {
+          "name": "Reno",
+          "climate": [
+            "arid",
+            "mountain"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "North Las Vegas",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 41,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "cities": [
+        {
+          "name": "Manchester",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Nashua",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Concord",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "cities": [
+        {
+          "name": "Newark",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Jersey City",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Paterson",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Trenton",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "cities": [
+        {
+          "name": "Albuquerque",
+          "climate": [
+            "arid",
+            "mountain"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Las Cruces",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        },
+        {
+          "name": "Santa Fe",
+          "climate": [
+            "arid",
+            "mountain"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "cities": [
+        {
+          "name": "New York City",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 4
+        },
+        {
+          "name": "Buffalo",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Rochester",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Yonkers",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Syracuse",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Albany",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "cities": [
+        {
+          "name": "Charlotte",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        },
+        {
+          "name": "Raleigh",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Greensboro",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Durham",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Wilmington",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Asheville",
+          "climate": [
+            "humid",
+            "mountain",
+            "subtropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "cities": [
+        {
+          "name": "Fargo",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Bismarck",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Grand Forks",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "cities": [
+        {
+          "name": "Columbus",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        },
+        {
+          "name": "Cleveland",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Cincinnati",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Toledo",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Dayton",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "cities": [
+        {
+          "name": "Oklahoma City",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 2
+        },
+        {
+          "name": "Tulsa",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        },
+        {
+          "name": "Norman",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        },
+        {
+          "name": "Lawton",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "cities": [
+        {
+          "name": "Portland",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Salem",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Eugene",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Bend",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Beaverton",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "cities": [
+        {
+          "name": "Philadelphia",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        },
+        {
+          "name": "Pittsburgh",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Allentown",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Erie",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Harrisburg",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "cities": [
+        {
+          "name": "Providence",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Warwick",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Cranston",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "cities": [
+        {
+          "name": "Charleston",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Columbia",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Greenville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Myrtle Beach",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "cities": [
+        {
+          "name": "Sioux Falls",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Rapid City",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Aberdeen",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "cities": [
+        {
+          "name": "Nashville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        },
+        {
+          "name": "Memphis",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 2
+        },
+        {
+          "name": "Knoxville",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Chattanooga",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "cities": [
+        {
+          "name": "Houston",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 3
+        },
+        {
+          "name": "San Antonio",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 36,
+          "popTier": 2
+        },
+        {
+          "name": "Dallas",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 37,
+          "popTier": 2
+        },
+        {
+          "name": "Austin",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 36,
+          "popTier": 2
+        },
+        {
+          "name": "Fort Worth",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 37,
+          "popTier": 2
+        },
+        {
+          "name": "El Paso",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        },
+        {
+          "name": "Arlington",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 37,
+          "popTier": 1
+        },
+        {
+          "name": "Corpus Christi",
+          "climate": [
+            "coastal",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Lubbock",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        },
+        {
+          "name": "Amarillo",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "McAllen",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        },
+        {
+          "name": "Midland",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "cities": [
+        {
+          "name": "Salt Lake City",
+          "climate": [
+            "arid",
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "West Valley City",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Provo",
+          "climate": [
+            "arid",
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "St. George",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "cities": [
+        {
+          "name": "Burlington",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "South Burlington",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Rutland",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "cities": [
+        {
+          "name": "Virginia Beach",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Norfolk",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Richmond",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Arlington",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Chesapeake",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "cities": [
+        {
+          "name": "Seattle",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 2
+        },
+        {
+          "name": "Spokane",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Tacoma",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Vancouver",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Bellevue",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Tri-Cities",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "cities": [
+        {
+          "name": "Charleston",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Huntington",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Morgantown",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "cities": [
+        {
+          "name": "Milwaukee",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 2
+        },
+        {
+          "name": "Madison",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Green Bay",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Kenosha",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "cities": [
+        {
+          "name": "Cheyenne",
+          "climate": [
+            "arid",
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Casper",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Laramie",
+          "climate": [
+            "continental",
+            "mountain"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

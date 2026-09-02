@@ -1,0 +1,53 @@
+{
+  "code": "CZ",
+  "name": "Czechia",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "states": [
+    {
+      "code": "80",
+      "name": "Moravian-Silesian",
+      "cities": [
+        {
+          "name": "Ostrava",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "name": "Prague",
+      "cities": [
+        {
+          "name": "Prague",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "name": "South Moravian",
+      "cities": [
+        {
+          "name": "Brno",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

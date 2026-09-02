@@ -1,0 +1,86 @@
+{
+  "code": "AE",
+  "name": "United Arab Emirates",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "states": [
+    {
+      "code": "AZ",
+      "name": "Abu Dhabi",
+      "cities": [
+        {
+          "name": "Abu Dhabi",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "DU",
+      "name": "Dubai",
+      "cities": [
+        {
+          "name": "Dubai",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 3
+        },
+        {
+          "name": "Al Ain",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 44,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "RK",
+      "name": "Ras Al Khaimah",
+      "cities": [
+        {
+          "name": "Ras Al Khaimah",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SH",
+      "name": "Sharjah",
+      "cities": [
+        {
+          "name": "Sharjah",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

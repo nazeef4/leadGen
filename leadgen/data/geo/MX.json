@@ -1,0 +1,171 @@
+{
+  "code": "MX",
+  "name": "Mexico",
+  "region": "Americas",
+  "subregion": "Central America",
+  "states": [
+    {
+      "code": "BC",
+      "name": "Baja California",
+      "cities": [
+        {
+          "name": "Tijuana",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        },
+        {
+          "name": "Mexicali",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        },
+        {
+          "name": "Ensenada",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CHH",
+      "name": "Chihuahua",
+      "cities": [
+        {
+          "name": "Chihuahua",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        },
+        {
+          "name": "Ciudad Juarez",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 37,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "JAL",
+      "name": "Jalisco",
+      "cities": [
+        {
+          "name": "Guadalajara",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 3
+        },
+        {
+          "name": "Zapopan",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "CMX",
+      "name": "Mexico City",
+      "cities": [
+        {
+          "name": "Mexico City",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 25,
+          "popTier": 4
+        }
+      ]
+    },
+    {
+      "code": "NLE",
+      "name": "Nuevo Leon",
+      "cities": [
+        {
+          "name": "Monterrey",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 36,
+          "popTier": 3
+        },
+        {
+          "name": "San Nicolas de los Garza",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PUE",
+      "name": "Puebla",
+      "cities": [
+        {
+          "name": "Puebla",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 27,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "QR",
+      "name": "Quintana Roo",
+      "cities": [
+        {
+          "name": "Cancun",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Playa del Carmen",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

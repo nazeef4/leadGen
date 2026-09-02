@@ -1,0 +1,47 @@
+{
+  "code": "QA",
+  "name": "Qatar",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "states": [
+    {
+      "code": "DA",
+      "name": "Doha",
+      "cities": [
+        {
+          "name": "Doha",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 2
+        },
+        {
+          "name": "Al Rayyan",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        },
+        {
+          "name": "Al Wakrah",
+          "climate": [
+            "arid",
+            "coastal",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

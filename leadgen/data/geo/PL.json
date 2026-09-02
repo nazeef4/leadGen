@@ -1,0 +1,119 @@
+{
+  "code": "PL",
+  "name": "Poland",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "states": [
+    {
+      "code": "12",
+      "name": "Lesser Poland",
+      "cities": [
+        {
+          "name": "Krakow",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 2
+        },
+        {
+          "name": "Tarnow",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "name": "Lower Silesian",
+      "cities": [
+        {
+          "name": "Wroclaw",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "name": "Masovian",
+      "cities": [
+        {
+          "name": "Warsaw",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 2
+        },
+        {
+          "name": "Radom",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "name": "Pomeranian",
+      "cities": [
+        {
+          "name": "Gdansk",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Gdynia",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "name": "Silesian",
+      "cities": [
+        {
+          "name": "Katowice",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Czestochowa",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

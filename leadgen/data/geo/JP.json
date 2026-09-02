@@ -1,0 +1,123 @@
+{
+  "code": "JP",
+  "name": "Japan",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "states": [
+    {
+      "code": "23",
+      "name": "Aichi",
+      "cities": [
+        {
+          "name": "Nagoya",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        },
+        {
+          "name": "Toyota",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "name": "Fukuoka",
+      "cities": [
+        {
+          "name": "Fukuoka",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Kitakyushu",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "01",
+      "name": "Hokkaido",
+      "cities": [
+        {
+          "name": "Sapporo",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "name": "Osaka",
+      "cities": [
+        {
+          "name": "Osaka",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 3
+        },
+        {
+          "name": "Sakai",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "name": "Tokyo",
+      "cities": [
+        {
+          "name": "Tokyo",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 4
+        },
+        {
+          "name": "Shinjuku",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

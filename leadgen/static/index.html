@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#131a24">
+<meta name="color-scheme" content="dark">
+<title>LeadGen Studio</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#view">Skip to content</a>
+<div id="app">
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <div class="brand">
+      <div class="brand-mark">LG</div>
+      <div>
+        <div class="brand-name">LeadGen Studio</div>
+        <div class="brand-sub" id="brand-version">local</div>
+      </div>
+      <button class="icon-btn nav-close" id="btn-nav-close" aria-label="Close menu" type="button">&times;</button>
+    </div>
+    <nav id="nav">
+      <button class="nav-item active" data-view="dashboard" type="button">Dashboard</button>
+      <button class="nav-item" data-view="targeting" type="button">1 · Targeting</button>
+      <button class="nav-item" data-view="leads" type="button">2 · Leads</button>
+      <button class="nav-item" data-view="compose" type="button">3 · Compose</button>
+      <button class="nav-item" data-view="dispatch" type="button">4 · Dispatch</button>
+      <button class="nav-item" data-view="crm" type="button">5 · CRM &amp; Replies</button>
+      <button class="nav-item" data-view="accounts" type="button">Accounts</button>
+      <button class="nav-item" data-view="settings" type="button">Compliance &amp; AI</button>
+    </nav>
+    <div class="side-foot">
+      <div id="quota-mini" class="quota-mini">—</div>
+      <div class="side-note">Runs entirely on this machine.</div>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main class="content">
+    <header class="topbar">
+      <button class="icon-btn nav-open" id="btn-nav-open" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false" type="button">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <div class="topbar-head">
+        <h1 id="view-title">Dashboard</h1>
+        <p id="view-sub" class="muted">Overview of targeting, outreach and pipeline health.</p>
+      </div>
+      <div class="topbar-actions">
+        <span id="dispatch-pill" class="pill pill-idle">idle</span>
+        <button class="btn ghost" id="btn-refresh" type="button">Refresh</button>
+      </div>
+    </header>
+    <section id="view" class="view" tabindex="-1"></section>
+  </main>
+</div>
+<div id="toast-host" role="status" aria-live="polite"></div>
+<div id="modal-host" class="modal-host hidden" role="dialog" aria-modal="true"></div>
+<script src="/static/api.js"></script>
+<script src="/static/views.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

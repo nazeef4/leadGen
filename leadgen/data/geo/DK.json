@@ -1,0 +1,47 @@
+{
+  "code": "DK",
+  "name": "Denmark",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "states": [
+    {
+      "code": "84",
+      "name": "Capital Region",
+      "cities": [
+        {
+          "name": "Copenhagen",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 2
+        },
+        {
+          "name": "Frederiksberg",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "name": "Central Jutland",
+      "cities": [
+        {
+          "name": "Aarhus",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "code": "CN",
+  "name": "China",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "states": [
+    {
+      "code": "BJ",
+      "name": "Beijing",
+      "cities": [
+        {
+          "name": "Beijing",
+          "climate": [
+            "continental",
+            "hot"
+          ],
+          "avgSummerC": 31,
+          "popTier": 4
+        }
+      ]
+    },
+    {
+      "code": "GD",
+      "name": "Guangdong",
+      "cities": [
+        {
+          "name": "Guangzhou",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 3
+        },
+        {
+          "name": "Shenzhen",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 3
+        },
+        {
+          "name": "Dongguan",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 2
+        },
+        {
+          "name": "Foshan",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "JS",
+      "name": "Jiangsu",
+      "cities": [
+        {
+          "name": "Suzhou",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        },
+        {
+          "name": "Nanjing",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        },
+        {
+          "name": "Wuxi",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "SH",
+      "name": "Shanghai",
+      "cities": [
+        {
+          "name": "Shanghai",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 4
+        },
+        {
+          "name": "Pudong",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "ZJ",
+      "name": "Zhejiang",
+      "cities": [
+        {
+          "name": "Hangzhou",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        },
+        {
+          "name": "Ningbo",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        },
+        {
+          "name": "Wenzhou",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

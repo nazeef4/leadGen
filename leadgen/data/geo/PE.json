@@ -1,0 +1,53 @@
+{
+  "code": "PE",
+  "name": "Peru",
+  "region": "Americas",
+  "subregion": "South America",
+  "states": [
+    {
+      "code": "ARE",
+      "name": "Arequipa",
+      "cities": [
+        {
+          "name": "Arequipa",
+          "climate": [
+            "arid",
+            "highland"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CUS",
+      "name": "Cusco",
+      "cities": [
+        {
+          "name": "Cusco",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "LIM",
+      "name": "Lima",
+      "cities": [
+        {
+          "name": "Lima",
+          "climate": [
+            "arid",
+            "coastal"
+          ],
+          "avgSummerC": 26,
+          "popTier": 4
+        }
+      ]
+    }
+  ]
+}

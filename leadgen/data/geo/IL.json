@@ -1,0 +1,64 @@
+{
+  "code": "IL",
+  "name": "Israel",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "states": [
+    {
+      "code": "HA",
+      "name": "Haifa",
+      "cities": [
+        {
+          "name": "Haifa",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "JM",
+      "name": "Jerusalem",
+      "cities": [
+        {
+          "name": "Jerusalem",
+          "climate": [
+            "mediterranean",
+            "mountain"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "TA",
+      "name": "Tel Aviv",
+      "cities": [
+        {
+          "name": "Tel Aviv",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Ramat Gan",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

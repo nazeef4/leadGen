@@ -1,0 +1,75 @@
+{
+  "code": "IE",
+  "name": "Ireland",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "states": [
+    {
+      "code": "C",
+      "name": "Cork",
+      "cities": [
+        {
+          "name": "Cork",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "name": "Dublin",
+      "cities": [
+        {
+          "name": "Dublin",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 2
+        },
+        {
+          "name": "Tallaght",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "G",
+      "name": "Galway",
+      "cities": [
+        {
+          "name": "Galway",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 18,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "L",
+      "name": "Limerick",
+      "cities": [
+        {
+          "name": "Limerick",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}
