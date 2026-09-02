@@ -1,0 +1,243 @@
+{
+  "code": "IT",
+  "name": "Italy",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "states": [
+    {
+      "code": "75",
+      "name": "Apulia",
+      "cities": [
+        {
+          "name": "Bari",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Lecce",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Taranto",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "name": "Campania",
+      "cities": [
+        {
+          "name": "Naples",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        },
+        {
+          "name": "Salerno",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "name": "Lazio",
+      "cities": [
+        {
+          "name": "Rome",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 3
+        },
+        {
+          "name": "Latina",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "name": "Lombardy",
+      "cities": [
+        {
+          "name": "Milan",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        },
+        {
+          "name": "Bergamo",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Brescia",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "name": "Piedmont",
+      "cities": [
+        {
+          "name": "Turin",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Novara",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "name": "Sicily",
+      "cities": [
+        {
+          "name": "Palermo",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Catania",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Messina",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "name": "Tuscany",
+      "cities": [
+        {
+          "name": "Florence",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Pisa",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Prato",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "name": "Veneto",
+      "cities": [
+        {
+          "name": "Venice",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Verona",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Padua",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

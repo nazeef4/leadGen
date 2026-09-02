@@ -1,0 +1,63 @@
+{
+  "code": "NG",
+  "name": "Nigeria",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "states": [
+    {
+      "code": "FC",
+      "name": "Abuja",
+      "cities": [
+        {
+          "name": "Abuja",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "name": "Lagos",
+      "cities": [
+        {
+          "name": "Lagos",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 4
+        },
+        {
+          "name": "Ikeja",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "Rivers",
+      "cities": [
+        {
+          "name": "Port Harcourt",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

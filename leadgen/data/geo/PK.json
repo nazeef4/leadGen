@@ -1,0 +1,100 @@
+{
+  "code": "PK",
+  "name": "Pakistan",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "states": [
+    {
+      "code": "IS",
+      "name": "Islamabad",
+      "cities": [
+        {
+          "name": "Islamabad",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PB",
+      "name": "Punjab",
+      "cities": [
+        {
+          "name": "Lahore",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 39,
+          "popTier": 3
+        },
+        {
+          "name": "Faisalabad",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 2
+        },
+        {
+          "name": "Rawalpindi",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        },
+        {
+          "name": "Multan",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 42,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "Sindh",
+      "cities": [
+        {
+          "name": "Karachi",
+          "climate": [
+            "arid",
+            "coastal",
+            "hot"
+          ],
+          "avgSummerC": 36,
+          "popTier": 4
+        },
+        {
+          "name": "Hyderabad",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 41,
+          "popTier": 1
+        },
+        {
+          "name": "Sukkur",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 43,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

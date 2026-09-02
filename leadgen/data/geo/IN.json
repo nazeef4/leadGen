@@ -1,0 +1,466 @@
+{
+  "code": "IN",
+  "name": "India",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "states": [
+    {
+      "code": "DL",
+      "name": "Delhi",
+      "cities": [
+        {
+          "name": "New Delhi",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 4
+        },
+        {
+          "name": "Dwarka",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "GJ",
+      "name": "Gujarat",
+      "cities": [
+        {
+          "name": "Ahmedabad",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 2
+        },
+        {
+          "name": "Surat",
+          "climate": [
+            "coastal",
+            "hot",
+            "humid"
+          ],
+          "avgSummerC": 34,
+          "popTier": 2
+        },
+        {
+          "name": "Vadodara",
+          "climate": [
+            "hot"
+          ],
+          "avgSummerC": 37,
+          "popTier": 1
+        },
+        {
+          "name": "Rajkot",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "HR",
+      "name": "Haryana",
+      "cities": [
+        {
+          "name": "Gurugram",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 2
+        },
+        {
+          "name": "Faridabad",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 41,
+          "popTier": 2
+        },
+        {
+          "name": "Panipat",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "KA",
+      "name": "Karnataka",
+      "cities": [
+        {
+          "name": "Bengaluru",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 3
+        },
+        {
+          "name": "Mysuru",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Mangaluru",
+          "climate": [
+            "coastal",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Hubballi",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "KL",
+      "name": "Kerala",
+      "cities": [
+        {
+          "name": "Kochi",
+          "climate": [
+            "coastal",
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        },
+        {
+          "name": "Thiruvananthapuram",
+          "climate": [
+            "coastal",
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Kozhikode",
+          "climate": [
+            "coastal",
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MH",
+      "name": "Maharashtra",
+      "cities": [
+        {
+          "name": "Mumbai",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 4
+        },
+        {
+          "name": "Pune",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        },
+        {
+          "name": "Nagpur",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 36,
+          "popTier": 2
+        },
+        {
+          "name": "Nashik",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        },
+        {
+          "name": "Thane",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "PB",
+      "name": "Punjab",
+      "cities": [
+        {
+          "name": "Ludhiana",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 39,
+          "popTier": 1
+        },
+        {
+          "name": "Amritsar",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 39,
+          "popTier": 1
+        },
+        {
+          "name": "Jalandhar",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 39,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "RJ",
+      "name": "Rajasthan",
+      "cities": [
+        {
+          "name": "Jaipur",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 38,
+          "popTier": 2
+        },
+        {
+          "name": "Jodhpur",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        },
+        {
+          "name": "Udaipur",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 37,
+          "popTier": 1
+        },
+        {
+          "name": "Kota",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tamil Nadu",
+      "cities": [
+        {
+          "name": "Chennai",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 38,
+          "popTier": 3
+        },
+        {
+          "name": "Coimbatore",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 2
+        },
+        {
+          "name": "Madurai",
+          "climate": [
+            "hot",
+            "tropical"
+          ],
+          "avgSummerC": 37,
+          "popTier": 1
+        },
+        {
+          "name": "Salem",
+          "climate": [
+            "hot",
+            "tropical"
+          ],
+          "avgSummerC": 37,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "TG",
+      "name": "Telangana",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "climate": [
+            "hot",
+            "tropical"
+          ],
+          "avgSummerC": 37,
+          "popTier": 3
+        },
+        {
+          "name": "Warangal",
+          "climate": [
+            "hot",
+            "tropical"
+          ],
+          "avgSummerC": 39,
+          "popTier": 1
+        },
+        {
+          "name": "Nizamabad",
+          "climate": [
+            "hot",
+            "tropical"
+          ],
+          "avgSummerC": 38,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "UP",
+      "name": "Uttar Pradesh",
+      "cities": [
+        {
+          "name": "Lucknow",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 38,
+          "popTier": 2
+        },
+        {
+          "name": "Kanpur",
+          "climate": [
+            "hot",
+            "subtropical"
+          ],
+          "avgSummerC": 39,
+          "popTier": 2
+        },
+        {
+          "name": "Agra",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        },
+        {
+          "name": "Noida",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        },
+        {
+          "name": "Ghaziabad",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 40,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WB",
+      "name": "West Bengal",
+      "cities": [
+        {
+          "name": "Kolkata",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 3
+        },
+        {
+          "name": "Howrah",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        },
+        {
+          "name": "Durgapur",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

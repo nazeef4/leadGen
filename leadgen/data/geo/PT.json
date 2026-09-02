@@ -1,0 +1,96 @@
+{
+  "code": "PT",
+  "name": "Portugal",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "states": [
+    {
+      "code": "08",
+      "name": "Faro",
+      "cities": [
+        {
+          "name": "Faro",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Albufeira",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Portimao",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "name": "Lisbon",
+      "cities": [
+        {
+          "name": "Lisbon",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Cascais",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Amadora",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "name": "Porto",
+      "cities": [
+        {
+          "name": "Porto",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 25,
+          "popTier": 2
+        },
+        {
+          "name": "Braga",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

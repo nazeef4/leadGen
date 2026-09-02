@@ -1,0 +1,227 @@
+{
+  "code": "FR",
+  "name": "France",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "states": [
+    {
+      "code": "ARA",
+      "name": "Auvergne-Rhone-Alpes",
+      "cities": [
+        {
+          "name": "Lyon",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Grenoble",
+          "climate": [
+            "mountain",
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Saint-Etienne",
+          "climate": [
+            "mountain",
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "GES",
+      "name": "Grand Est",
+      "cities": [
+        {
+          "name": "Strasbourg",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Reims",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Nancy",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "HDF",
+      "name": "Hauts-de-France",
+      "cities": [
+        {
+          "name": "Lille",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Amiens",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "IDF",
+      "name": "Ile-de-France",
+      "cities": [
+        {
+          "name": "Paris",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 3
+        },
+        {
+          "name": "Boulogne-Billancourt",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Versailles",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NAQ",
+      "name": "Nouvelle-Aquitaine",
+      "cities": [
+        {
+          "name": "Bordeaux",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Pau",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "La Rochelle",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "OCC",
+      "name": "Occitanie",
+      "cities": [
+        {
+          "name": "Toulouse",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Montpellier",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Perpignan",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PAC",
+      "name": "Provence-Alpes-Cote d'Azur",
+      "cities": [
+        {
+          "name": "Marseille",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Nice",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Toulon",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Aix-en-Provence",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

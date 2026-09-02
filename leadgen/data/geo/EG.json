@@ -1,0 +1,57 @@
+{
+  "code": "EG",
+  "name": "Egypt",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "states": [
+    {
+      "code": "ALX",
+      "name": "Alexandria",
+      "cities": [
+        {
+          "name": "Alexandria",
+          "climate": [
+            "arid",
+            "coastal",
+            "hot"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "name": "Cairo",
+      "cities": [
+        {
+          "name": "Cairo",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 36,
+          "popTier": 4
+        },
+        {
+          "name": "Giza",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 37,
+          "popTier": 2
+        },
+        {
+          "name": "New Cairo",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

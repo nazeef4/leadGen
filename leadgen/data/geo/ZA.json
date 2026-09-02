@@ -1,0 +1,93 @@
+{
+  "code": "ZA",
+  "name": "South Africa",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "states": [
+    {
+      "code": "GT",
+      "name": "Gauteng",
+      "cities": [
+        {
+          "name": "Johannesburg",
+          "climate": [
+            "highland",
+            "subtropical",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 3
+        },
+        {
+          "name": "Pretoria",
+          "climate": [
+            "highland",
+            "subtropical",
+            "temperate"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        },
+        {
+          "name": "Sandton",
+          "climate": [
+            "highland",
+            "subtropical",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "KZN",
+      "name": "KwaZulu-Natal",
+      "cities": [
+        {
+          "name": "Durban",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Umhlanga",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WC",
+      "name": "Western Cape",
+      "cities": [
+        {
+          "name": "Cape Town",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        },
+        {
+          "name": "Stellenbosch",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

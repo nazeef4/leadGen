@@ -1,0 +1,68 @@
+{
+  "code": "CO",
+  "name": "Colombia",
+  "region": "Americas",
+  "subregion": "South America",
+  "states": [
+    {
+      "code": "ANT",
+      "name": "Antioquia",
+      "cities": [
+        {
+          "name": "Medellin",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "ATL",
+      "name": "Atlantico",
+      "cities": [
+        {
+          "name": "Barranquilla",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "name": "Bogota",
+      "cities": [
+        {
+          "name": "Bogota",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 20,
+          "popTier": 4
+        }
+      ]
+    },
+    {
+      "code": "VAC",
+      "name": "Valle del Cauca",
+      "cities": [
+        {
+          "name": "Cali",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        }
+      ]
+    }
+  ]
+}

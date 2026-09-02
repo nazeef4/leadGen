@@ -198,3 +198,64 @@ def test_google_places_key_comes_from_settings():
     assert empty.available is False
     assert empty.search("anything", limit=5) == []
     assert "not configured" in empty.last_error
+
+
+def test_shipped_package_data_is_not_gitignored():
+    """
+    `.gitignore` contained an unanchored `data/`, which matches at any depth and
+    silently excluded leadgen/data/ — the 55-file geo dataset and
+    spam_rules.json. The repo shipped without its own data, so a fresh clone
+    failed 23 tests and the app could not rank a single city.
+
+    This asserts the files are present AND that git does not consider them
+    ignored, which is the failure mode that hid the problem.
+    """
+    from leadgen.services.compliance import RULES_PATH
+
+    data_dir = PACKAGE / "data"
+    geo_dir = data_dir / "geo"
+    assert RULES_PATH.exists(), "leadgen/data/spam_rules.json must be present"
+    assert geo_dir.is_dir(), "leadgen/data/geo/ must be present"
+    assert len(list(geo_dir.glob("*.json"))) >= 50, "geo dataset looks incomplete"
+
+    ignored = subprocess.run(
+        ["git", "check-ignore", str(RULES_PATH), str(geo_dir / "US.json")],
+        capture_output=True, text=True, cwd=str(ROOT),
+    )
+    assert ignored.returncode != 0, (
+        "shipped package data is gitignored, so it will never be committed: "
+        f"{ignored.stdout.strip()}"
+    )
+
+
+def test_gitignore_does_not_shadow_package_directories():
+    """
+    An unanchored gitignore pattern matches at any depth, so `data/` also
+    matched leadgen/data/. Rather than hard-code a list of risky names, check
+    every bare directory pattern against the directories the package actually
+    ships and fail if one of them would be swallowed.
+    """
+    gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
+    patterns = [
+        ln.strip()
+        for ln in gitignore.splitlines()
+        if ln.strip() and not ln.strip().startswith("#") and not ln.strip().startswith("!")
+    ]
+
+    # Directories the package ships, at any depth.
+    shipped = {d.name for d in PACKAGE.rglob("*") if d.is_dir() and "__pycache__" not in d.parts}
+
+    shadowed = []
+    for pattern in patterns:
+        if pattern.startswith("/"):
+            continue  # anchored to the repo root: cannot match inside the package
+        name = pattern.rstrip("/")
+        if not name or "*" in name or "/" in name:
+            continue
+        if name in shipped:
+            shadowed.append(pattern)
+
+    assert not shadowed, (
+        f"these unanchored .gitignore patterns also match package directories "
+        f"{sorted(shadowed)}; anchor them with a leading slash (e.g. '/{shadowed[0]}')"
+    )

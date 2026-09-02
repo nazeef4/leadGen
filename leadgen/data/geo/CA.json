@@ -1,0 +1,387 @@
+{
+  "code": "CA",
+  "name": "Canada",
+  "region": "Americas",
+  "subregion": "North America",
+  "states": [
+    {
+      "code": "AB",
+      "name": "Alberta",
+      "cities": [
+        {
+          "name": "Calgary",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 23,
+          "popTier": 2
+        },
+        {
+          "name": "Edmonton",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Red Deer",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Lethbridge",
+          "climate": [
+            "arid",
+            "continental"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "BC",
+      "name": "British Columbia",
+      "cities": [
+        {
+          "name": "Vancouver",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 2
+        },
+        {
+          "name": "Victoria",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Surrey",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Kelowna",
+          "climate": [
+            "continental"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Abbotsford",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "MB",
+      "name": "Manitoba",
+      "cities": [
+        {
+          "name": "Winnipeg",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Brandon",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NB",
+      "name": "New Brunswick",
+      "cities": [
+        {
+          "name": "Moncton",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Saint John",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Fredericton",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NL",
+      "name": "Newfoundland and Labrador",
+      "cities": [
+        {
+          "name": "St. John's",
+          "climate": [
+            "coastal",
+            "cold"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        },
+        {
+          "name": "Corner Brook",
+          "climate": [
+            "coastal",
+            "cold"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NS",
+      "name": "Nova Scotia",
+      "cities": [
+        {
+          "name": "Halifax",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Dartmouth",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Sydney",
+          "climate": [
+            "coastal",
+            "cold"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "ON",
+      "name": "Ontario",
+      "cities": [
+        {
+          "name": "Toronto",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 3
+        },
+        {
+          "name": "Ottawa",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Mississauga",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Hamilton",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "London",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Windsor",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Kitchener",
+          "climate": [
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PE",
+      "name": "Prince Edward Island",
+      "cities": [
+        {
+          "name": "Charlottetown",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Summerside",
+          "climate": [
+            "coastal",
+            "continental",
+            "humid"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "QC",
+      "name": "Quebec",
+      "cities": [
+        {
+          "name": "Montreal",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 2
+        },
+        {
+          "name": "Quebec City",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Laval",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Gatineau",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        },
+        {
+          "name": "Longueuil",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SK",
+      "name": "Saskatchewan",
+      "cities": [
+        {
+          "name": "Saskatoon",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Regina",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

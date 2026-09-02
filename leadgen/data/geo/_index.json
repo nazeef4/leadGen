@@ -1,0 +1,436 @@
+{
+  "countries": [
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "region": "Americas",
+      "subregion": "South America",
+      "stateCount": 5,
+      "cityCount": 7
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "region": "Oceania",
+      "subregion": "Australasia",
+      "stateCount": 8,
+      "cityCount": 28
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "stateCount": 4,
+      "cityCount": 4
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "stateCount": 2,
+      "cityCount": 3
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "stateCount": 4,
+      "cityCount": 6
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "region": "Americas",
+      "subregion": "South America",
+      "stateCount": 8,
+      "cityCount": 16
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "region": "Americas",
+      "subregion": "North America",
+      "stateCount": 10,
+      "cityCount": 35
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "region": "Americas",
+      "subregion": "South America",
+      "stateCount": 3,
+      "cityCount": 4
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "stateCount": 5,
+      "cityCount": 13
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "region": "Americas",
+      "subregion": "South America",
+      "stateCount": 4,
+      "cityCount": 4
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "stateCount": 3,
+      "cityCount": 3
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "stateCount": 2,
+      "cityCount": 3
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "stateCount": 2,
+      "cityCount": 4
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "stateCount": 2,
+      "cityCount": 4
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "stateCount": 7,
+      "cityCount": 21
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "stateCount": 8,
+      "cityCount": 24
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "stateCount": 2,
+      "cityCount": 3
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "stateCount": 3,
+      "cityCount": 5
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "stateCount": 12,
+      "cityCount": 43
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "stateCount": 4,
+      "cityCount": 6
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "stateCount": 4,
+      "cityCount": 5
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "stateCount": 3,
+      "cityCount": 4
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "stateCount": 8,
+      "cityCount": 21
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "stateCount": 5,
+      "cityCount": 9
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "stateCount": 2,
+      "cityCount": 2
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "stateCount": 1,
+      "cityCount": 2
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "stateCount": 4,
+      "cityCount": 7
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "region": "Americas",
+      "subregion": "Central America",
+      "stateCount": 7,
+      "cityCount": 13
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "stateCount": 4,
+      "cityCount": 4
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "stateCount": 3,
+      "cityCount": 9
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "region": "Oceania",
+      "subregion": "Australasia",
+      "stateCount": 4,
+      "cityCount": 8
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "stateCount": 3,
+      "cityCount": 4
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "stateCount": 3,
+      "cityCount": 3
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "stateCount": 3,
+      "cityCount": 8
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "region": "Americas",
+      "subregion": "South America",
+      "stateCount": 3,
+      "cityCount": 3
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "stateCount": 3,
+      "cityCount": 6
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "stateCount": 5,
+      "cityCount": 9
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "stateCount": 3,
+      "cityCount": 8
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "stateCount": 1,
+      "cityCount": 3
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "stateCount": 3,
+      "cityCount": 3
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "stateCount": 4,
+      "cityCount": 9
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "stateCount": 1,
+      "cityCount": 1
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "stateCount": 3,
+      "cityCount": 7
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "stateCount": 3,
+      "cityCount": 4
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "stateCount": 8,
+      "cityCount": 26
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "stateCount": 2,
+      "cityCount": 3
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "stateCount": 3,
+      "cityCount": 6
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "stateCount": 4,
+      "cityCount": 5
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "stateCount": 3,
+      "cityCount": 4
+    },
+    {
+      "code": "TR",
+      "name": "Turkey",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "stateCount": 5,
+      "cityCount": 6
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "stateCount": 4,
+      "cityCount": 5
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "stateCount": 4,
+      "cityCount": 22
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "region": "Americas",
+      "subregion": "North America",
+      "stateCount": 51,
+      "cityCount": 217
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "stateCount": 3,
+      "cityCount": 3
+    }
+  ]
+}

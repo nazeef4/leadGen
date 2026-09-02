@@ -1,0 +1,103 @@
+{
+  "code": "NL",
+  "name": "Netherlands",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "states": [
+    {
+      "code": "NB",
+      "name": "North Brabant",
+      "cities": [
+        {
+          "name": "Eindhoven",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Tilburg",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Breda",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "name": "North Holland",
+      "cities": [
+        {
+          "name": "Amsterdam",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Haarlem",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "ZH",
+      "name": "South Holland",
+      "cities": [
+        {
+          "name": "Rotterdam",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "The Hague",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Utrecht",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Leiden",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "code": "VN",
+  "name": "Vietnam",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "states": [
+    {
+      "code": "DN",
+      "name": "Da Nang",
+      "cities": [
+        {
+          "name": "Da Nang",
+          "climate": [
+            "coastal",
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "HN",
+      "name": "Hanoi",
+      "cities": [
+        {
+          "name": "Hanoi",
+          "climate": [
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 3
+        }
+      ]
+    },
+    {
+      "code": "SG",
+      "name": "Ho Chi Minh City",
+      "cities": [
+        {
+          "name": "Ho Chi Minh City",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 3
+        }
+      ]
+    }
+  ]
+}

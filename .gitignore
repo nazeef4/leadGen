@@ -8,8 +8,11 @@ venv/
 .ruff_cache/
 .mypy_cache/
 
-# Local runtime data (never commit secrets or scraped PII)
-data/
+# Local runtime data (never commit secrets or scraped PII).
+# Anchored with a leading slash on purpose: an unanchored `data/` matches at any
+# depth and silently excluded leadgen/data/ (the shipped geo dataset and
+# spam_rules.json), so a fresh clone had no data and 23 tests failed.
+/data/
 *.db
 *.db-journal
 *.sqlite

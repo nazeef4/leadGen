@@ -1,0 +1,72 @@
+{
+  "code": "GR",
+  "name": "Greece",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "states": [
+    {
+      "code": "I",
+      "name": "Attica",
+      "cities": [
+        {
+          "name": "Athens",
+          "climate": [
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 34,
+          "popTier": 2
+        },
+        {
+          "name": "Piraeus",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Central Macedonia",
+      "cities": [
+        {
+          "name": "Thessaloniki",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "M",
+      "name": "Crete",
+      "cities": [
+        {
+          "name": "Heraklion",
+          "climate": [
+            "coastal",
+            "hot",
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 1
+        },
+        {
+          "name": "Chania",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

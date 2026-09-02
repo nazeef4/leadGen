@@ -1,0 +1,307 @@
+{
+  "code": "AU",
+  "name": "Australia",
+  "region": "Oceania",
+  "subregion": "Australasia",
+  "states": [
+    {
+      "code": "ACT",
+      "name": "Australian Capital Territory",
+      "cities": [
+        {
+          "name": "Canberra",
+          "climate": [
+            "continental",
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NSW",
+      "name": "New South Wales",
+      "cities": [
+        {
+          "name": "Sydney",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 3
+        },
+        {
+          "name": "Newcastle",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        },
+        {
+          "name": "Wollongong",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        },
+        {
+          "name": "Central Coast",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 25,
+          "popTier": 1
+        },
+        {
+          "name": "Albury",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NT",
+      "name": "Northern Territory",
+      "cities": [
+        {
+          "name": "Darwin",
+          "climate": [
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Alice Springs",
+          "climate": [
+            "arid",
+            "desert",
+            "hot"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        },
+        {
+          "name": "Palmerston",
+          "climate": [
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "QLD",
+      "name": "Queensland",
+      "cities": [
+        {
+          "name": "Brisbane",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        },
+        {
+          "name": "Gold Coast",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        },
+        {
+          "name": "Cairns",
+          "climate": [
+            "coastal",
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Townsville",
+          "climate": [
+            "coastal",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Sunshine Coast",
+          "climate": [
+            "coastal",
+            "tropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Toowoomba",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SA",
+      "name": "South Australia",
+      "cities": [
+        {
+          "name": "Adelaide",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Mount Gambier",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Whyalla",
+          "climate": [
+            "arid",
+            "coastal"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "TAS",
+      "name": "Tasmania",
+      "cities": [
+        {
+          "name": "Hobart",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        },
+        {
+          "name": "Launceston",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Devonport",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "VIC",
+      "name": "Victoria",
+      "cities": [
+        {
+          "name": "Melbourne",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 3
+        },
+        {
+          "name": "Geelong",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        },
+        {
+          "name": "Ballarat",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Bendigo",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 27,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WA",
+      "name": "Western Australia",
+      "cities": [
+        {
+          "name": "Perth",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 32,
+          "popTier": 2
+        },
+        {
+          "name": "Bunbury",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        },
+        {
+          "name": "Kalgoorlie",
+          "climate": [
+            "arid",
+            "hot"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

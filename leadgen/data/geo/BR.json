@@ -1,0 +1,206 @@
+{
+  "code": "BR",
+  "name": "Brazil",
+  "region": "Americas",
+  "subregion": "South America",
+  "states": [
+    {
+      "code": "BA",
+      "name": "Bahia",
+      "cities": [
+        {
+          "name": "Salvador",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        },
+        {
+          "name": "Feira de Santana",
+          "climate": [
+            "hot",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "CE",
+      "name": "Ceara",
+      "cities": [
+        {
+          "name": "Fortaleza",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "MG",
+      "name": "Minas Gerais",
+      "cities": [
+        {
+          "name": "Belo Horizonte",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Uberlandia",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PR",
+      "name": "Parana",
+      "cities": [
+        {
+          "name": "Curitiba",
+          "climate": [
+            "highland",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 25,
+          "popTier": 2
+        },
+        {
+          "name": "Londrina",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "PE",
+      "name": "Pernambuco",
+      "cities": [
+        {
+          "name": "Recife",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 30,
+          "popTier": 2
+        }
+      ]
+    },
+    {
+      "code": "RS",
+      "name": "Rio Grande do Sul",
+      "cities": [
+        {
+          "name": "Porto Alegre",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 2
+        },
+        {
+          "name": "Caxias do Sul",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "RJ",
+      "name": "Rio de Janeiro",
+      "cities": [
+        {
+          "name": "Rio de Janeiro",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 3
+        },
+        {
+          "name": "Niteroi",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SP",
+      "name": "Sao Paulo",
+      "cities": [
+        {
+          "name": "Sao Paulo",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 4
+        },
+        {
+          "name": "Campinas",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 2
+        },
+        {
+          "name": "Santos",
+          "climate": [
+            "coastal",
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 28,
+          "popTier": 1
+        },
+        {
+          "name": "Sao Jose dos Campos",
+          "climate": [
+            "humid",
+            "subtropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

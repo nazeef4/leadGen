@@ -1,0 +1,49 @@
+{
+  "code": "LK",
+  "name": "Sri Lanka",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "states": [
+    {
+      "code": "2",
+      "name": "Central Province",
+      "cities": [
+        {
+          "name": "Kandy",
+          "climate": [
+            "mountain",
+            "tropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "1",
+      "name": "Western Province",
+      "cities": [
+        {
+          "name": "Colombo",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        },
+        {
+          "name": "Negombo",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

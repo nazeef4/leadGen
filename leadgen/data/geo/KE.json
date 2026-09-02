@@ -1,0 +1,39 @@
+{
+  "code": "KE",
+  "name": "Kenya",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "states": [
+    {
+      "code": "280",
+      "name": "Mombasa",
+      "cities": [
+        {
+          "name": "Mombasa",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 31,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "110",
+      "name": "Nairobi",
+      "cities": [
+        {
+          "name": "Nairobi",
+          "climate": [
+            "highland",
+            "tropical"
+          ],
+          "avgSummerC": 26,
+          "popTier": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "code": "BE",
+  "name": "Belgium",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "states": [
+    {
+      "code": "VAN",
+      "name": "Antwerp",
+      "cities": [
+        {
+          "name": "Antwerp",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Mechelen",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "BRU",
+      "name": "Brussels",
+      "cities": [
+        {
+          "name": "Brussels",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "VLI",
+      "name": "Limburg",
+      "cities": [
+        {
+          "name": "Hasselt",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        },
+        {
+          "name": "Genk",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WBR",
+      "name": "Walloon Brabant",
+      "cities": [
+        {
+          "name": "Louvain-la-Neuve",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

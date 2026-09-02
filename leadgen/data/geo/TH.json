@@ -1,0 +1,62 @@
+{
+  "code": "TH",
+  "name": "Thailand",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "states": [
+    {
+      "code": "10",
+      "name": "Bangkok",
+      "cities": [
+        {
+          "name": "Bangkok",
+          "climate": [
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 4
+        },
+        {
+          "name": "Nonthaburi",
+          "climate": [
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 35,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "name": "Chiang Mai",
+      "cities": [
+        {
+          "name": "Chiang Mai",
+          "climate": [
+            "tropical"
+          ],
+          "avgSummerC": 36,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "83",
+      "name": "Phuket",
+      "cities": [
+        {
+          "name": "Phuket",
+          "climate": [
+            "coastal",
+            "monsoon",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

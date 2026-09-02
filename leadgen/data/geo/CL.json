@@ -1,0 +1,60 @@
+{
+  "code": "CL",
+  "name": "Chile",
+  "region": "Americas",
+  "subregion": "South America",
+  "states": [
+    {
+      "code": "BI",
+      "name": "Biobio",
+      "cities": [
+        {
+          "name": "Concepcion",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 23,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "RM",
+      "name": "Santiago Metropolitan",
+      "cities": [
+        {
+          "name": "Santiago",
+          "climate": [
+            "mediterranean"
+          ],
+          "avgSummerC": 30,
+          "popTier": 4
+        }
+      ]
+    },
+    {
+      "code": "VS",
+      "name": "Valparaiso",
+      "cities": [
+        {
+          "name": "Valparaiso",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Vina del Mar",
+          "climate": [
+            "coastal",
+            "mediterranean"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

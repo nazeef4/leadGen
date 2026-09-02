@@ -1,0 +1,221 @@
+{
+  "code": "GB",
+  "name": "United Kingdom",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "states": [
+    {
+      "code": "ENG",
+      "name": "England",
+      "cities": [
+        {
+          "name": "London",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 23,
+          "popTier": 4
+        },
+        {
+          "name": "Manchester",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 2
+        },
+        {
+          "name": "Birmingham",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Liverpool",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        },
+        {
+          "name": "Leeds",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        },
+        {
+          "name": "Bristol",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Newcastle",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        },
+        {
+          "name": "Sheffield",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        },
+        {
+          "name": "Nottingham",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Southampton",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Brighton",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Coventry",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "NIR",
+      "name": "Northern Ireland",
+      "cities": [
+        {
+          "name": "Belfast",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        },
+        {
+          "name": "Derry",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 18,
+          "popTier": 1
+        },
+        {
+          "name": "Lisburn",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "SCT",
+      "name": "Scotland",
+      "cities": [
+        {
+          "name": "Glasgow",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        },
+        {
+          "name": "Edinburgh",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        },
+        {
+          "name": "Aberdeen",
+          "climate": [
+            "coastal",
+            "cold"
+          ],
+          "avgSummerC": 17,
+          "popTier": 1
+        },
+        {
+          "name": "Dundee",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 18,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "WLS",
+      "name": "Wales",
+      "cities": [
+        {
+          "name": "Cardiff",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        },
+        {
+          "name": "Swansea",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        },
+        {
+          "name": "Newport",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 20,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

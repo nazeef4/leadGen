@@ -1,0 +1,90 @@
+{
+  "code": "ID",
+  "name": "Indonesia",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "states": [
+    {
+      "code": "BA",
+      "name": "Bali",
+      "cities": [
+        {
+          "name": "Denpasar",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        },
+        {
+          "name": "Badung",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 32,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "JI",
+      "name": "East Java",
+      "cities": [
+        {
+          "name": "Surabaya",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 34,
+          "popTier": 2
+        },
+        {
+          "name": "Malang",
+          "climate": [
+            "mountain",
+            "tropical"
+          ],
+          "avgSummerC": 29,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "JK",
+      "name": "Jakarta",
+      "cities": [
+        {
+          "name": "Jakarta",
+          "climate": [
+            "coastal",
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 4
+        }
+      ]
+    },
+    {
+      "code": "SU",
+      "name": "North Sumatra",
+      "cities": [
+        {
+          "name": "Medan",
+          "climate": [
+            "humid",
+            "tropical"
+          ],
+          "avgSummerC": 33,
+          "popTier": 2
+        }
+      ]
+    }
+  ]
+}

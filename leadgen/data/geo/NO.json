@@ -1,0 +1,54 @@
+{
+  "code": "NO",
+  "name": "Norway",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "states": [
+    {
+      "code": "03",
+      "name": "Oslo",
+      "cities": [
+        {
+          "name": "Oslo",
+          "climate": [
+            "coastal",
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "name": "Trondelag",
+      "cities": [
+        {
+          "name": "Trondheim",
+          "climate": [
+            "coastal",
+            "cold"
+          ],
+          "avgSummerC": 19,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "name": "Vestland",
+      "cities": [
+        {
+          "name": "Bergen",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 18,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "code": "SE",
+  "name": "Sweden",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "states": [
+    {
+      "code": "M",
+      "name": "Skane",
+      "cities": [
+        {
+          "name": "Malmo",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Helsingborg",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "AB",
+      "name": "Stockholm",
+      "cities": [
+        {
+          "name": "Stockholm",
+          "climate": [
+            "coastal",
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        },
+        {
+          "name": "Solna",
+          "climate": [
+            "cold",
+            "continental"
+          ],
+          "avgSummerC": 22,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "O",
+      "name": "Vastra Gotaland",
+      "cities": [
+        {
+          "name": "Gothenburg",
+          "climate": [
+            "coastal",
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        },
+        {
+          "name": "Boras",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 21,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}

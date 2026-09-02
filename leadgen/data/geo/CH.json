@@ -1,0 +1,76 @@
+{
+  "code": "CH",
+  "name": "Switzerland",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "states": [
+    {
+      "code": "BS",
+      "name": "Basel",
+      "cities": [
+        {
+          "name": "Basel",
+          "climate": [
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "BE",
+      "name": "Bern",
+      "cities": [
+        {
+          "name": "Bern",
+          "climate": [
+            "mountain",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "GE",
+      "name": "Geneva",
+      "cities": [
+        {
+          "name": "Geneva",
+          "climate": [
+            "mountain",
+            "temperate"
+          ],
+          "avgSummerC": 26,
+          "popTier": 1
+        }
+      ]
+    },
+    {
+      "code": "ZH",
+      "name": "Zurich",
+      "cities": [
+        {
+          "name": "Zurich",
+          "climate": [
+            "mountain",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        },
+        {
+          "name": "Winterthur",
+          "climate": [
+            "mountain",
+            "temperate"
+          ],
+          "avgSummerC": 24,
+          "popTier": 1
+        }
+      ]
+    }
+  ]
+}
