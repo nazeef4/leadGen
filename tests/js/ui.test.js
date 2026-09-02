@@ -263,6 +263,54 @@ async function main() {
     window.document.querySelector('#view').textContent.slice(0, 80));
   window.fetch = realFetch;
 
+  /* ------------------------------------------------- responsive / mobile */
+  const sidebar = window.document.querySelector('#sidebar');
+  const scrimEl = window.document.querySelector('#scrim');
+  const openBtn = window.document.querySelector('#btn-nav-open');
+  const closeBtn = window.document.querySelector('#btn-nav-close');
+  ok('mobile drawer elements present', !!(sidebar && scrimEl && openBtn && closeBtn));
+  ok('drawer starts closed', !sidebar.classList.contains('open') && scrimEl.hidden === true);
+  ok('hamburger advertises collapsed state', openBtn.getAttribute('aria-expanded') === 'false');
+
+  openBtn.click();
+  ok('hamburger opens the drawer', sidebar.classList.contains('open'));
+  ok('opening reveals the scrim', scrimEl.hidden === false);
+  ok('hamburger advertises expanded state', openBtn.getAttribute('aria-expanded') === 'true');
+  ok('body scroll is locked while the drawer is open',
+    window.document.body.classList.contains('nav-locked'));
+
+  // Escape must close the drawer when no modal is open.
+  window.document.dispatchEvent(new window.Event('keydown', { bubbles: true }));
+  // jsdom KeyboardEvent needs the key set explicitly.
+  const esc = new window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true });
+  window.document.dispatchEvent(esc);
+  ok('Escape closes the drawer', !sidebar.classList.contains('open') && scrimEl.hidden === true);
+
+  openBtn.click();
+  scrimEl.click();
+  ok('tapping the scrim closes the drawer', !sidebar.classList.contains('open'));
+
+  openBtn.click();
+  ok('drawer reopens before navigation test', sidebar.classList.contains('open'));
+  await window.__app.go('crm');
+  ok('navigating closes the drawer', !sidebar.classList.contains('open'));
+
+  // The stacked mobile table needs labels, or cells render unnamed.
+  await window.__app.go('leads');
+  const table = window.document.querySelector('#view table');
+  ok('leads table opts into the responsive layout', table.classList.contains('responsive'));
+  const labelled = window.document.querySelectorAll('#view table td[data-label]');
+  ok('lead rows carry column labels for the mobile card view', labelled.length >= 12,
+    `${labelled.length} labelled cells`);
+  const labels = Array.from(new Set(Array.from(labelled).map((td) => td.dataset.label)));
+  ok('labels name the real columns',
+    ['Business', 'Email', 'Location', 'Score', 'Status'].every((l) => labels.includes(l)),
+    labels.join(','));
+  ok('checkbox cells are excluded from the label treatment',
+    !!window.document.querySelector('#view table td.cell-check'));
+  ok('row checkbox has an accessible name',
+    !!window.document.querySelector('#view table td.cell-check input[aria-label]'));
+
   ok('no uncaught console errors', consoleErrors.length === 0, consoleErrors.slice(0, 3).join(' | '));
 
   /* ---------------------------------------------------------------- report */

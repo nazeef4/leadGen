@@ -558,25 +558,28 @@ function renderTable(host, leads, selectAll, reload) {
     return;
   }
   const rows = leads.map((lead) => h('tr', { class: lead.selected ? 'selected' : '' }, [
-    h('td', {}, (() => {
-      const box = h('input', { type: 'checkbox', class: 'lead-check', 'data-id': String(lead.id) });
+    h('td', { class: 'cell-check' }, (() => {
+      const box = h('input', {
+        type: 'checkbox', class: 'lead-check', 'data-id': String(lead.id),
+        'aria-label': `Select ${lead.business_name || 'lead'}`,
+      });
       box.checked = lead.selected;
       box.addEventListener('change', () => box.closest('tr').classList.toggle('selected', box.checked));
       return box;
     })()),
-    h('td', {}, [
+    h('td', { 'data-label': 'Business' }, [
       h('a', { href: '#', onclick: (e) => { e.preventDefault(); openLead(lead.id); } }, lead.business_name || '(unnamed)'),
       h('span', { class: 'sub' }, [lead.category || '—', lead.contact_name ? ` · ${lead.contact_name}` : ''].join('')),
     ]),
-    h('td', {}, [lead.email || h('span', { class: 'muted' }, 'no email'),
+    h('td', { 'data-label': 'Email' }, [lead.email || h('span', { class: 'muted' }, 'no email'),
       lead.website ? h('span', { class: 'sub' }, lead.website.replace(/^https?:\/\//, '')) : null]),
-    h('td', {}, [lead.city || '—', h('span', { class: 'sub' }, [lead.state, lead.country].filter(Boolean).join(', '))]),
-    h('td', { class: 'score' }, [
+    h('td', { 'data-label': 'Location' }, [lead.city || '—', h('span', { class: 'sub' }, [lead.state, lead.country].filter(Boolean).join(', '))]),
+    h('td', { class: 'score', 'data-label': 'Score' }, [
       String(lead.score),
       lead.rating ? h('span', { class: 'sub' }, `★ ${lead.rating}${lead.review_count ? ` (${lead.review_count})` : ''}`) : null,
     ]),
-    h('td', {}, pill(lead.status, lead.status === 'replied' ? 'good' : lead.status === 'sent' ? 'accent' : lead.status === 'failed' ? 'bad' : 'idle')),
-    h('td', {}, h('button', {
+    h('td', { 'data-label': 'Status' }, pill(lead.status, lead.status === 'replied' ? 'good' : lead.status === 'sent' ? 'accent' : lead.status === 'failed' ? 'bad' : 'idle')),
+    h('td', { 'data-label': '' }, h('button', {
       class: 'btn small ghost',
       onclick: async () => {
         const next = !lead.selected;
@@ -586,7 +589,7 @@ function renderTable(host, leads, selectAll, reload) {
     }, lead.selected ? 'Deselect' : 'Select')),
   ]));
   host.appendChild(h('div', { class: 'table-wrap' }, [
-    h('table', {}, [
+    h('table', { class: 'responsive' }, [
       h('thead', {}, h('tr', {}, [
         h('th', {}, selectAll), h('th', {}, 'Business'), h('th', {}, 'Email'),
         h('th', {}, 'Location'), h('th', {}, 'Score'), h('th', {}, 'Status'), h('th', {}, ''),

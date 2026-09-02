@@ -1,4 +1,4 @@
-/* App shell: navigation, global state polling, boot. */
+/* App shell: navigation, mobile drawer, global state polling, boot. */
 const VIEW_META = {
   dashboard: ['Dashboard', 'Overview of targeting, outreach and pipeline health.'],
   targeting: ['1 · Smart targeting', 'Define the offer, let the advisor pick the geography and buyer profile.'],
@@ -10,12 +10,36 @@ const VIEW_META = {
   settings: ['Compliance & AI', 'Sender identity, pacing limits and the optional AI copy engine.'],
 };
 
+/* ------------------------------------------------------- mobile drawer */
+function openNav() {
+  const sidebar = $('#sidebar');
+  const scrim = $('#scrim');
+  const open = $('#btn-nav-open');
+  sidebar.classList.add('open');
+  scrim.hidden = false;
+  document.body.classList.add('nav-locked');
+  if (open) open.setAttribute('aria-expanded', 'true');
+}
+
+function closeNav() {
+  const sidebar = $('#sidebar');
+  const scrim = $('#scrim');
+  const open = $('#btn-nav-open');
+  if (!sidebar || !sidebar.classList.contains('open')) return;
+  sidebar.classList.remove('open');
+  if (scrim) scrim.hidden = true;
+  document.body.classList.remove('nav-locked');
+  if (open) open.setAttribute('aria-expanded', 'false');
+}
+
 async function go(view) {
   const host = $('#view');
   const meta = VIEW_META[view] || [view, ''];
   $('#view-title').textContent = meta[0];
   $('#view-sub').textContent = meta[1];
   $$('.nav-item').forEach((b) => b.classList.toggle('active', b.dataset.view === view));
+  document.title = `${meta[0]} · LeadGen Studio`;
+  closeNav();
   host.innerHTML = '<div class="empty"><span class="spinner"></span> loading…</div>';
   host.setAttribute('data-active-view', view);
   try {
@@ -30,6 +54,8 @@ async function go(view) {
     ]));
     toast(String(err.message || err), 'err');
   }
+  // On phones the new screen starts below the fold after the drawer closes.
+  if (window.innerWidth <= 820) window.scrollTo({ top: 0, behavior: 'auto' });
 }
 
 async function refreshChrome() {
@@ -52,7 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
   $$('.nav-item').forEach((btn) => btn.addEventListener('click', () => go(btn.dataset.view)));
   $('#btn-refresh').addEventListener('click', () => { refreshChrome(); go($('.nav-item.active').dataset.view); });
   $('#modal-host').addEventListener('click', (e) => { if (e.target.id === 'modal-host') closeModal(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  const openBtn = $('#btn-nav-open');
+  if (openBtn) openBtn.addEventListener('click', openNav);
+  const closeBtn = $('#btn-nav-close');
+  if (closeBtn) closeBtn.addEventListener('click', closeNav);
+  const scrim = $('#scrim');
+  if (scrim) scrim.addEventListener('click', closeNav);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    // Close the topmost layer first: modal, then the nav drawer.
+    if (!$('#modal-host').classList.contains('hidden')) closeModal();
+    else closeNav();
+  });
+
+  // A growing viewport should never leave the drawer stuck open.
+  window.addEventListener('resize', () => { if (window.innerWidth > 820) closeNav(); });
+
   refreshChrome();
   setInterval(refreshChrome, 8000);
   go('dashboard');
